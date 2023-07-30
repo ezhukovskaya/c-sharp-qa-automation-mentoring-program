@@ -25,7 +25,7 @@ Before you can use Selenium WebDriver with Chrome or Firefox, you need to downlo
 
 ### Chrome Driver
 
-1. Go to the [ChromeDriver download page]('[https://sites.google.com/a/chromium.org/chromedriver/downloads]('https://googlechromelabs.github.io/chrome-for-testing/').
+1. Go to the [ChromeDriver download page]('[https://sites.google.com/a/chromium.org/chromedriver/downloads]('https://googlechromelabs.github.io/chrome-for-testing/')).
 2. Download the ChromeDriver executable that matches your installed Chrome browser version.
 3. Extract the downloaded zip file and copy the chromedriver.exe to a location on your system.
 4. In the test script, specify the path to the ChromeDriver executable when creating the ChromeDriver instance, like this:
