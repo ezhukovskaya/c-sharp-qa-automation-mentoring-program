@@ -43,7 +43,7 @@ var driver = new ChromeDriver("path/to/chromedriver", chromeOptions);
 
 ### Firefox Driver (GeckoDriver)
 
-1. Go to the [GeckoDriver download page]('https://github.com/mozilla/geckodriver/releases'). 
+1. Go to the [GeckoDriver download page](https://github.com/mozilla/geckodriver/releases). 
 2. Download the GeckoDriver executable for your operating system. 
 3. Extract the downloaded zip file and copy the geckodriver.exe (Windows) or geckodriver (Linux/macOS) to a location on your system. 
 4. In the test script, specify the path to the GeckoDriver executable when creating the FirefoxDriver instance, like this:
