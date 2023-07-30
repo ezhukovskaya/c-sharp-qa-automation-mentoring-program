@@ -17,7 +17,7 @@ Selenium consists of three main components, each serving a specific purpose:
 3. **Selenium Grid:**
     - Selenium Grid enables parallel test execution by distributing tests across multiple machines or browsers simultaneously. This is especially useful for speeding up the test execution process and achieving efficient cross-browser testing.
 
-To learn more about Selenium's components in detail, you can refer to this article: [Selenium Components: IDE, WebDriver, and Grid](https://www.selenium.dev/documentation/en/selenium_components/)
+To learn more about Selenium's components in detail, you can refer to this article: [Selenium Components: IDE, WebDriver, and Grid](https://www.selenium.dev/documentation)
 
 ## Installing Chrome and Firefox Drivers
 
@@ -25,7 +25,7 @@ Before you can use Selenium WebDriver with Chrome or Firefox, you need to downlo
 
 ### Chrome Driver
 
-1. Go to the [ChromeDriver download page]('https://sites.google.com/a/chromium.org/chromedriver/downloads).
+1. Go to the [ChromeDriver download page]('[https://sites.google.com/a/chromium.org/chromedriver/downloads](https://googlechromelabs.github.io/chrome-for-testing/).
 2. Download the ChromeDriver executable that matches your installed Chrome browser version.
 3. Extract the downloaded zip file and copy the chromedriver.exe to a location on your system.
 4. In the test script, specify the path to the ChromeDriver executable when creating the ChromeDriver instance, like this:
