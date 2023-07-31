@@ -10,9 +10,7 @@ In this tutorial, we will cover the basics of Selenium and how to create your fi
    - [SeleniumHQ](https://www.selenium.dev/): The official website of Selenium provides documentation, downloads, and other essential resources.
 2. Selenium Documentation:
    - [Selenium Documentation](https://www.selenium.dev/documentation/en/): The official documentation covers all aspects of Selenium, including guides, APIs, and best practices.
-3. Selenium C# WebDriver API:
-   - [C# WebDriver API](https://www.selenium.dev/selenium/docs/api/dotnet/): Official documentation for Selenium's C# WebDriver API.
-4. NUnit Framework:
+3. NUnit Framework:
    - [NUnit Official Website](https://nunit.org/): NUnit is a popular testing framework for C# projects and is ideal for Selenium test automation.
 
 ## Hometask
