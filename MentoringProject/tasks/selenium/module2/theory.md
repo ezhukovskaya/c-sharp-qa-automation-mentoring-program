@@ -28,7 +28,7 @@ In NUnit, there are two important attributes that can be used to set up and tear
       <pre><code>using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-
+<br>
 [TestFixture]
 public class WithoutSetUpAndTearDownExample
 {
@@ -85,7 +85,7 @@ private IWebDriver driver;
 <td>
    <pre><code>using NUnit.Framework;using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-
+<br>
 [TestFixture]
 public class WithSetUpAndTearDownExample
 {
@@ -172,7 +172,7 @@ In this approach, the SetUp method is executed before each test method, and the 
       <pre><code>using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-
+<br>
 [TestFixture]
 public class WithoutSetUpAndTearDownExample
 {
@@ -229,7 +229,7 @@ private IWebDriver driver;
 <td>
    <pre><code>using NUnit.Framework;using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-
+<br>
 [TestFixture]
 public class WithSetUpAndTearDownExample
 {
