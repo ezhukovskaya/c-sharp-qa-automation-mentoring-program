@@ -83,7 +83,8 @@ public class WithoutSetUpAndTearDownExample
 </code></pre>
 </td>
 <td>
-   <pre><code>using NUnit.Framework;using OpenQA.Selenium;
+   <pre><code>using NUnit.Framework;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 <br>
 [TestFixture]
@@ -227,7 +228,8 @@ public class WithoutSetUpAndTearDownExample
 </code></pre>
 </td>
 <td>
-   <pre><code>using NUnit.Framework;using OpenQA.Selenium;
+   <pre><code>using NUnit.Framework;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 <br>
 [TestFixture]
