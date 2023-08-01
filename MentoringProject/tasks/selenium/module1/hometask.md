@@ -13,7 +13,7 @@ In this tutorial, we will cover the basics of Selenium and how to create your fi
 3. NUnit Framework:
    - [NUnit Official Website](https://nunit.org/): NUnit is a popular testing framework for C# projects and is ideal for Selenium test automation.
 
-## Hometask
+## Home Task
 
 Your task is to create Selenium test scripts using C#, NUnit, and Visual Studio to perform the following test scenarios on the "Sauce Labs Demo" website
 
@@ -21,7 +21,7 @@ Your task is to create Selenium test scripts using C#, NUnit, and Visual Studio 
 
 1. Set up a new C# project in Visual Studio for your Selenium tests. Project must be Class Library type
 2. Create and checkout to the branch with name `module-1-branch`
-2. Add the necessary Selenium and NUnit packages to your C# project using NuGet Package Manager.
+3. Add the necessary Selenium and NUnit packages to your C# project using NuGet Package Manager.
 
 ### Scenario: Successful Login with Valid Credentials
 
