@@ -16,7 +16,7 @@ In this homework task, you will practice writing Postconditions and Precondition
 ## Home Task
 
 Your task is to create Selenium test scripts using C#, NUnit, and Visual Studio to perform the following test scenarios on the "Sauce Labs Demo" website.
-New tests must be added to the same `.cs` file created in **First Selenium Test** home task.
+New tests must be added to the same `.cs` file created in [First Selenium Test](../module1/hometask.md) home task.
 
 - You need to automate provided scenarios
 - You need to refactor you code using conditions attributes from NUnit
