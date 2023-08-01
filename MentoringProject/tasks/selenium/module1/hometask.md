@@ -23,7 +23,7 @@ Your task is to create Selenium test scripts using C#, NUnit, and Visual Studio 
 2. Create and checkout to the branch with name `module-1-branch`
 2. Add the necessary Selenium and NUnit packages to your C# project using NuGet Package Manager.
 
-### Scenario 1: Successful Login with Valid Credentials
+### Scenario: Successful Login with Valid Credentials
 
 1. Create a new C# test class for your Selenium test.
 2. Set up the Selenium WebDriver with the Chrome or Firefox browser
@@ -36,31 +36,6 @@ Your task is to create Selenium test scripts using C#, NUnit, and Visual Studio 
 7. On the inventory page, find and click on any product to view its details.
 8. Use NUnit assertions to validate that the product details are displayed correctly.
 9. Close the browser and end the test.
-
-### Scenario 2: Unsuccessful Login with Empty Credentials
-
-1. Create a new C# test class for your Selenium test.
-2. Set up the Selenium WebDriver with the Chrome or Firefox browser and
-3. Navigate to the "https://www.saucedemo.com/" URL.
-4. Find the username and password input fields and leave them empty.
-5. Click the "Login" button to attempt the login.
-6. Verify that an error message is displayed indicating the need to provide valid login credentials.
-7. Use NUnit assertions to validate the presence of the error message and its correctness.
-8. Close the browser and end the test.
-
-### Scenario 3: Unsuccessful Login with Invalid Credentials
-
-1. Create a new C# test class for your Selenium test.
-2. Set up the Selenium WebDriver with the Chrome or Firefox browser and
-3. Navigate to the "https://www.saucedemo.com/" URL.
-4. Find the username and password input fields and enter incorrect login credentials:
-
-   - Username: invalid_user
-   - Password: invalid_password
-5. Click the "Login" button to attempt the login.
-6. Verify that an error message is displayed indicating a failed login attempt.
-7. Use NUnit assertions to validate the presence of the error message and its correctness.
-8. Close the browser and end the test.
 
 ### After all check list
 
