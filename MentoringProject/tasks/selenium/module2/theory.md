@@ -33,49 +33,49 @@ using OpenQA.Selenium.Chrome;
 public class WithoutSetUpAndTearDownExample
 {
   private IWebDriver driver;
-
+<br>
     [Test]
     public void Test1()
     {
         // Initialize the WebDriver
         driver = new ChromeDriver();
-
+<br>
         // Navigate to the website
         driver.Navigate().GoToUrl("https://www.example.com");
-
+<br>
         // Perform test actions using driver
         // For example, find elements and interact with them:
         IWebElement searchInput = driver.FindElement(By.Name("q"));
         searchInput.SendKeys("NUnit Selenium");
         searchInput.Submit();
-
+<br>
         // Assert the test results
         // For example, verify if the search results page is displayed:
         Assert.IsTrue(driver.Title.Contains("NUnit Selenium"));
-
+<br>
         // Close the browser
         driver.Quit();
     }
-
+<br>
     [Test]
     public void Test2()
     {
         // Initialize the WebDriver
         driver = new ChromeDriver();
-
+<br>
         // Navigate to the website
         driver.Navigate().GoToUrl("https://www.example.com");
-
+<br>
         // Perform test actions using driver
         // For example, find elements and interact with them:
         IWebElement searchInput = driver.FindElement(By.Name("q"));
         searchInput.SendKeys("2");
         searchInput.Submit();
-
+<br>
         // Assert the test results
         // For example, verify if the search results page is displayed:
         Assert.IsFalse(driver.Title.Contains("NUnit Selenium"));
-
+<br>
         // Close the browser
         driver.Quit();
     }
@@ -91,58 +91,58 @@ using OpenQA.Selenium.Chrome;
 public class WithSetUpAndTearDownExample
 {
   private IWebDriver driver;
-
+<br>
     [SetUp]
     public void Setup()
     {
         // This method is executed before each test method.
-
+<br>
         // Initialize the WebDriver
         driver = new ChromeDriver();
     }
-
+<br>
     [TearDown]
     public void Teardown()
     {
         // This method is executed after each test method.
-
+<br>
         // Close the browser
         driver.Quit();
     }
-
+<br>
     [Test]
     public void Test1()
     {
         // No need to explicitly initialize WebDriver here, it's done in SetUp.
-
+<br>
         // Navigate to the website
         driver.Navigate().GoToUrl("https://www.example.com");
-
+<br>
         // Perform test actions using driver
         // For example, find elements and interact with them:
         IWebElement searchInput = driver.FindElement(By.Name("q"));
         searchInput.SendKeys("NUnit Selenium");
         searchInput.Submit();
-
+<br>
         // Assert the test results
         // For example, verify if the search results page is displayed:
         Assert.IsTrue(driver.Title.Contains("NUnit Selenium"));
     }
-
+<br>
     [Test]
     public void Test2()
     {
         // No need to explicitly initialize WebDriver here, it's done in SetUp.
-
+<br>
         // Navigate to another website or perform different actions
         driver.Navigate().GoToUrl("https://www.example.com");
-
+<br>
         // Perform test actions using driver
         // For example, find elements and interact with them:
         IWebElement searchInput = driver.FindElement(By.Name("q"));
         searchInput.SendKeys("2");
         searchInput.Submit();
-
+<br>
         // Assert the test results
         // For example, verify if the search results page is displayed:
         Assert.IsFalse(driver.Title.Contains("NUnit Selenium"));
@@ -178,49 +178,49 @@ using OpenQA.Selenium.Chrome;
 public class WithoutSetUpAndTearDownExample
 {
   private IWebDriver driver;
-
+<br>
     [Test]
     public void Test1()
     {
         // Initialize the WebDriver
         driver = new ChromeDriver();
-
+<br>
         // Navigate to the website
         driver.Navigate().GoToUrl("https://www.example.com");
-
+<br>
         // Perform test actions using driver
         // For example, find elements and interact with them:
         IWebElement searchInput = driver.FindElement(By.Name("q"));
         searchInput.SendKeys("NUnit Selenium");
         searchInput.Submit();
-
+<br>
         // Assert the test results
         // For example, verify if the search results page is displayed:
         Assert.IsTrue(driver.Title.Contains("NUnit Selenium"));
-
+<br>
         // Close the browser
         driver.Quit();
     }
-
+<br>
     [Test]
     public void Test2()
     {
         // Initialize the WebDriver
         driver = new ChromeDriver();
-
+<br>
         // Navigate to the website
         driver.Navigate().GoToUrl("https://www.example.com");
-
+<br>
         // Perform test actions using driver
         // For example, find elements and interact with them:
         IWebElement searchInput = driver.FindElement(By.Name("q"));
         searchInput.SendKeys("2");
         searchInput.Submit();
-
+<br>
         // Assert the test results
         // For example, verify if the search results page is displayed:
         Assert.IsFalse(driver.Title.Contains("NUnit Selenium"));
-
+<br>
         // Close the browser
         driver.Quit();
     }
@@ -235,64 +235,63 @@ using OpenQA.Selenium.Chrome;
 [TestFixture]
 public class WithSetUpAndTearDownExample
 {
-  private IWebDriver driver;
-
+  private IWebDriver driver;<br>
     [OneTimeSetUp]
     public void OneTimeSetup()
     {
         // This method is executed once before all test methods.
-
+<br>
         // Initialize the WebDriver
         driver = new ChromeDriver();
     }
-
+<br>
     [SetUp]
     public void Setup()
     {
         // This method is executed before each test method.
-
+<br>
         // Navigate to the website
         driver.Navigate().GoToUrl("https://www.example.com");
     }
-
+<br>
     [OneTimeTearDown]
     public void OneTimeTearDown()
     {
         // This method is executed once after all test methods.
-
+<br>
         // Close the browser
         driver.Quit();
     }
-
+<br>
     [Test]
     public void Test1()
     {
         // No need to explicitly initialize WebDriver here, it's done in SetUp.
         // No need to navigate to the website.
-
+<br>
         // Perform test actions using driver
         // For example, find elements and interact with them:
         IWebElement searchInput = driver.FindElement(By.Name("q"));
         searchInput.SendKeys("NUnit Selenium");
         searchInput.Submit();
-
+<br>
         // Assert the test results
         // For example, verify if the search results page is displayed:
         Assert.IsTrue(driver.Title.Contains("NUnit Selenium"));
     }
-
+<br>
     [Test]
     public void Test2()
     {
         // No need to explicitly initialize WebDriver here, it's done in SetUp.
         // No need to navigate to the website.
-
+<br>
         // Perform test actions using driver
         // For example, find elements and interact with them:
         IWebElement searchInput = driver.FindElement(By.Name("q"));
         searchInput.SendKeys("2");
         searchInput.Submit();
-
+<br>
         // Assert the test results
         // For example, verify if the search results page is displayed:
         Assert.IsFalse(driver.Title.Contains("NUnit Selenium"));
