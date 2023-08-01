@@ -18,7 +18,7 @@ In NUnit, there are two important attributes that can be used to set up and tear
 - **[SetUp]**: This attribute is used to denote a method that will be executed before each test method in the test fixture. It helps in preparing the necessary test data and environment before each test execution.
 - **[TearDown]**: This attribute is used to denote a method that will be executed after each test method in the test fixture. It helps in cleaning up the test environment and resources after each test execution.
 
-<table>
+<table style="font-size: 10px">
   <tr>
     <td align="center">Without Conditions</td>
     <td align="center">With Conditions</td>
