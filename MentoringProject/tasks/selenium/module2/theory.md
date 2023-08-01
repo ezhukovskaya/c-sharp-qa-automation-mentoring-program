@@ -32,7 +32,7 @@ using OpenQA.Selenium.Chrome;
 [TestFixture]
 public class WithoutSetUpAndTearDownExample
 {
-private IWebDriver driver;
+    private IWebDriver driver;
 
     [Test]
     public void Test1()
@@ -89,7 +89,7 @@ using OpenQA.Selenium.Chrome;
 [TestFixture]
 public class WithSetUpAndTearDownExample
 {
-private IWebDriver driver;
+    private IWebDriver driver;
 
     [SetUp]
     public void Setup()
@@ -176,7 +176,7 @@ using OpenQA.Selenium.Chrome;
 [TestFixture]
 public class WithoutSetUpAndTearDownExample
 {
-private IWebDriver driver;
+    private IWebDriver driver;
 
     [Test]
     public void Test1()
@@ -233,7 +233,7 @@ using OpenQA.Selenium.Chrome;
 [TestFixture]
 public class WithSetUpAndTearDownExample
 {
-private IWebDriver driver;
+    private IWebDriver driver;
 
     [OneTimeSetUp]
     public void OneTimeSetup()
