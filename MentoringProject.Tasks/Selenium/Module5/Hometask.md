@@ -21,6 +21,8 @@ For this homework, you are required to create four unique test scenarios for thr
 Object Pattern. Use C#, NUnit, and Selenium to implement the test cases. Make sure to create separate Page Object 
 classes for each page and follow best practices of the Page Object Pattern.
 
+Test website: http://the-internet.herokuapp.com/
+
 **NOTE**: Don't forget to set up the WebDriver in the BrowserFactory.cs (as shown in the previous examples) to 
 instantiate the browser for your test scenarios. Make sure your code follows best practices and is well-structured 
 with meaningful comments for better understanding. Happy testing!
