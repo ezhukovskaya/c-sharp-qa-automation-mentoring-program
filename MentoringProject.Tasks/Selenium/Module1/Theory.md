@@ -99,7 +99,7 @@ Tools > NuGet Package Manager > Manage NuGet Packages for Solution > Search for 
 3. Extract the downloaded zip file and copy the chromedriver.exe to a location on your system.
 4. In the test script, specify the path to the ChromeDriver executable when creating the ChromeDriver instance, like this:
 
-### Firefox Driver (GeckoDriver)
+#### Firefox Driver (GeckoDriver)
 
 1. Go to the [GeckoDriver download page](https://github.com/mozilla/geckodriver/releases). 
 2. Download the GeckoDriver executable for your operating system. 
