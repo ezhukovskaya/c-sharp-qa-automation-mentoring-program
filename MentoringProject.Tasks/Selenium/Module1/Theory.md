@@ -3,8 +3,7 @@
 ## What is Selenium?
 
 Selenium is a powerful open-source automation testing framework primarily used for web application testing. 
-It allows testers and developers to automate browser actions and interactions to validate the functionality of \
-web applications across different browsers and operating systems.
+It allows testers and developers to automate browser actions and interactions to validate the functionality of web applications across different browsers and operating systems.
 
 ### Selenium IDE, Selenium WebDriver, and Selenium Grid
 
@@ -33,7 +32,7 @@ To learn more about Selenium's components in detail, you can refer to this artic
 First, create a new Class Library project in your C# solution to host your Selenium WebDriver tests.
 
 #### Visual Studio
-1. Right click on your solution in Solution Explorer > Add > New Project
+1. Right-click on your solution in Solution Explorer > Add > New Project
 
 ![Right Click on Solution](./Resources/rightClickSolution.png "Right Click on Solution")
 
@@ -43,23 +42,22 @@ First, create a new Class Library project in your C# solution to host your Selen
 ![Selecting class library project](./Resources/classLibrary.png "Selecting class library project")
 
 #### JetBrains Rider
-1. Right click on your solution in Solution Explorer > Add > New Project
+1. Right-click on your solution in Solution Explorer > Add > New Project
 
 ![Right Click on Solution](./Resources/rightClickSolutionRider.png "Right Click on Solution")
 
-2. Select Class Library patter > Set Name > Create
+2. Select Class Library pattern> Set Name > Create
 
 ![Selecting class library project](./Resources/classLibraryRider.png "Selecting class library project")
 
 ### Step 2: Adding a Test Class
 
-Add a new class to the project that will contain your test methods. In this example, 
-let's name the class "SeleniumTests."
+Next, you need to add a new class to the class library project that will contain your test methods.
+In this example, let's name the class "SeleniumTests"
 
 ```csharp
-using OpenQA.Selenium;
-
-public class SeleniumTests {
+public class SeleniumTests
+{
 }
 ```
 
@@ -75,10 +73,14 @@ Before working with Selenium WebDriver, you need to install the necessary packag
 
 ![NuGet Packages](./Resources/nugetPackages.png "NuGet Packages")
 
-#### Installing Chrome and Firefox Drivers
+### Step 4. Installing Driver
 
-IWebDriver is an interface provided by Selenium WebDriver, which is a popular framework for automated testing
-of web applications. In C#, you would use it to automate browser behavior. There are two ways how to install driver 
+First of all, automation using Selenium WebDriver is mainly about:
+  - interaction with the browser - opening a browser, navigating to the URLs, closing browser tabs etc
+  - interaction with elements on a browser - clicking buttons, inputting values into textboxes, selecting options from dropdown
+    
+IWebDriver is an interface provided by Selenium WebDriver, which is a popular framework for the automated testing
+of web applications. In C#, you would use it to automate browser behavior. There are two ways how to install a driver 
 (Chrome/Firefox):
 
 **1. NuGet Package (Preferable)**
@@ -119,11 +121,13 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-public class SeleniumTestExample {
+public class SeleniumTestExample
+{
     IWebDriver driver;
 
     [Test]
-    public void TestWebsiteTitle() {
+    public void TestWebsiteTitle()
+    {
         // Set the path of the ChromeDriver executable
         var driver = new ChromeDriver();
         
