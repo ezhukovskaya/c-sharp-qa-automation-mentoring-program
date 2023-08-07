@@ -33,7 +33,7 @@ with meaningful comments for better understanding. Happy testing!
 
 
 | Step                               | Expected result                                                        |
-| ---------------------------------- | ---------------------------------------------------------------------- |
+|------------------------------------|------------------------------------------------------------------------|
 | Go to the Login page.              | Login page is displayed.                                               |
 | Enter valid username and password. | Username and password fields are filled with valid credentials.        |
 | Click the Login button.            | User is successfully logged in and redirected to the Secure Area page. |
@@ -42,7 +42,7 @@ with meaningful comments for better understanding. Happy testing!
 
 
 | Step                                 | Expected result                                                   |
-| ------------------------------------ | ----------------------------------------------------------------- |
+|--------------------------------------|-------------------------------------------------------------------|
 | Go to the Login page.                | Login page is displayed.                                          |
 | Enter invalid username and password. | Username and password fields are filled with invalid credentials. |
 | Click the Login button.              | An error message is displayed indicating missing credentials.     |
@@ -51,7 +51,7 @@ with meaningful comments for better understanding. Happy testing!
 
 
 | Step                               | Expected result                                                        |
-| ---------------------------------- | ---------------------------------------------------------------------- |
+|------------------------------------|------------------------------------------------------------------------|
 | Go to the Login page.              | Login page is displayed.                                               |
 | Enter valid username and password. | Username and password fields are filled with valid credentials.        |
 | Click the Login button.            | User is successfully logged in and redirected to the Secure Area page. |
@@ -61,7 +61,7 @@ with meaningful comments for better understanding. Happy testing!
 
 
 | Step                                          | Expected result                                               |
-| --------------------------------------------- | ------------------------------------------------------------- |
+|-----------------------------------------------|---------------------------------------------------------------|
 | Go to the Login page.                         | Login page is displayed.                                      |
 | Leave the username and password fields empty. | Username and password fields are empty.                       |
 | Click the Login button.                       | An error message is displayed indicating missing credentials. |
@@ -72,7 +72,7 @@ with meaningful comments for better understanding. Happy testing!
 
 
 | Step                        | Expected result                                 |
-| --------------------------- | ----------------------------------------------- |
+|-----------------------------|-------------------------------------------------|
 | Go to the Checkboxes page.  | Verify that there are two checkboxes displayed. |
 | Check the first checkbox.   | Verify that the first checkbox is checked.      |
 | Uncheck the first checkbox. | Verify that the first checkbox is unchecked.    |
@@ -81,7 +81,7 @@ with meaningful comments for better understanding. Happy testing!
 
 
 | Step                       | Expected result                                 |
-| -------------------------- | ----------------------------------------------- |
+|----------------------------|-------------------------------------------------|
 | Go to the Checkboxes page. | Verify that there are two checkboxes displayed. |
 | Check both checkboxes.     | Verify that both checkboxes are checked.        |
 
@@ -89,7 +89,7 @@ with meaningful comments for better understanding. Happy testing!
 
 
 | Step                       | Expected result                                 |
-| -------------------------- | ----------------------------------------------- |
+|----------------------------|-------------------------------------------------|
 | Go to the Checkboxes page. | Verify that there are two checkboxes displayed. |
 | Check both checkboxes.     | Verify that both checkboxes are checked.        |
 | Uncheck both checkboxes.   | Verify that both checkboxes are unchecked.      |
@@ -98,7 +98,7 @@ with meaningful comments for better understanding. Happy testing!
 
 
 | Step                                                            | Expected result                                                         |
-| --------------------------------------------------------------- | ----------------------------------------------------------------------- |
+|-----------------------------------------------------------------|-------------------------------------------------------------------------|
 | Go to the Checkboxes page.                                      | Verify that there are two checkboxes displayed.                         |
 | Toggle the first checkbox multiple times (Check-Uncheck-Check). | Verify that the first checkbox is checked.                              |
 | Uncheck the first checkbox.                                     | Verify that the first checkbox status is as expected after each toggle. |
@@ -109,7 +109,7 @@ with meaningful comments for better understanding. Happy testing!
 
 
 | Step                                     | Expected result                                   |
-| ---------------------------------------- | ------------------------------------------------- |
+|------------------------------------------|---------------------------------------------------|
 | Go to the Dropdown page.                 | Dropdown page is displayed..                      |
 | Select an option from the dropdown list. | The selected option is displayed in the dropdown. |
 
@@ -117,7 +117,7 @@ with meaningful comments for better understanding. Happy testing!
 
 
 | Step                                      | Expected result                                     |
-| ----------------------------------------- | --------------------------------------------------- |
+|-------------------------------------------|-----------------------------------------------------|
 | Go to the Dropdown page.                  | Dropdown page is displayed..                        |
 | Select an option from the dropdown list.  | The selected option is displayed in the dropdown.   |
 | Repeat the process for different options. | The selected options are displayed in the dropdown. |
@@ -126,7 +126,7 @@ with meaningful comments for better understanding. Happy testing!
 
 
 | Step                                                 | Expected result                        |
-| ---------------------------------------------------- | -------------------------------------- |
+|------------------------------------------------------|----------------------------------------|
 | Go to the Dropdown page.                             | Dropdown page is displayed..           |
 | Get the list of available options from the dropdown. | The list matches the expected options. |
 
@@ -134,7 +134,7 @@ with meaningful comments for better understanding. Happy testing!
 
 
 | Step                                           | Expected result                                   |
-| ---------------------------------------------- | ------------------------------------------------- |
+|------------------------------------------------|---------------------------------------------------|
 | Go to the Dropdown page.                       | Dropdown page is displayed..                      |
 | Select a random option from the dropdown list. | The selected option is displayed in the dropdown. |
 
