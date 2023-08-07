@@ -24,8 +24,6 @@ to ensure reliable and stable test execution.
 
 Test website: http://the-internet.herokuapp.com/
 
-### Login Page:
-
 ### Scenario 1: Form Authentication - Failed Login
 
 | Step Description                                     | Expected Result                                                |
