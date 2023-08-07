@@ -23,7 +23,8 @@ actions and validations on web elements.
     - Selenium Grid enables parallel test execution by distributing tests across multiple machines or browsers 
 simultaneously. This is especially useful for speeding up the test execution process and achieving efficient cross-browser testing.
 
-To learn more about Selenium's components in detail, you can refer to this article: [Selenium Components: IDE, WebDriver, and Grid](https://www.selenium.dev/documentation)
+To learn more about Selenium's components in detail, you can refer to this article: 
+[Selenium Components: IDE, WebDriver, and Grid](https://www.selenium.dev/documentation)
 
 ## Getting Started with Selenium WebDriver in C#
 
@@ -214,3 +215,7 @@ Keep in mind that this is just a basic example, and Selenium provides many more 
 for comprehensive web application testing.
 
 Happy coding with Selenium in C#!
+
+## Useful links
+1. [Selenium WebDriver](https://www.selenium.dev/documentation/webdriver/) Documentation
+1. [NUnit](https://docs.nunit.org/articles/nunit/getting-started/installation.html) Documentation
