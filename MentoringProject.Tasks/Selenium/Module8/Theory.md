@@ -244,6 +244,16 @@ public class TestLoginPage
 }
 ```
 
+This code features a test class `TestLoginPage` which has a single test `TestLoginFunctionality`. This test mimics a login 
+process, where it enters a username and password, checks a checkbox to 'remember me', chooses a user role from a 
+dropdown, and finally, clicks a button to log in.
+
+Through this test, our `LoginPage` class, and each of our encapsulated WebElement classes (`ButtonElement`, `TextBoxElement`, 
+`CheckBoxElement`, `DropDownElement`), have allowed us to write expressive, self-documenting test code. Namely, when the 
+test reader sees `_loginPage.UsernameInput.EnterText("myusername");` they can clearly understand this line of code is 
+entering `'myusername'` into the Username input box, thanks to the well-named `WebElement` wrappers and their additional 
+methods.
+
 ## Useful Links
 
 - [Official Selenium Documentation](https://www.selenium.dev/documentation/en/)
