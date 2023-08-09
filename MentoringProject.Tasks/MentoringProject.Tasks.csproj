@@ -16,6 +16,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Selenium\Module1\Resources\" />
+      <Folder Include="Selenium\Module1_First_Selenium_Test\Resources\" />
     </ItemGroup>
 </Project>
