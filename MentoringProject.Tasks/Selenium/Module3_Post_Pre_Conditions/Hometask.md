@@ -44,7 +44,7 @@ New tests must be added to the same `.cs` file created in [First Selenium Test](
 ### After all check list
 
 1. Make screenshot that your test passes successfully
-2. Create Pull Request with name `Module-2-{TaskName}`
+2. Create Pull Request with name `Module-3-{TaskName}`
 3. Add screenshot to PR description
 4. Notify your mentor about completing the task
 

@@ -21,7 +21,7 @@ Practicing using `IWebElement` Wrappers
 ## After all check list
 
 1. Make two screenshots that your test passes successfully for both browsers (Chrome, Firefox)
-2. Create Pull Request with name `Module-8-{TaskName}`
+2. Create Pull Request with name `Module-9-{TaskName}`
 3. Add screenshots to PR description
 4. Notify your mentor about completing the task
 

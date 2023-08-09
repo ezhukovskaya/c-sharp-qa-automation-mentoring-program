@@ -73,7 +73,7 @@ Test website: http://the-internet.herokuapp.com/
 ## After all check list
 
 1. Make two screenshots that your test passes successfully for both browsers (Chrome, Firefox)
-2. Create Pull Request with name `Module-6-{TaskName}`
+2. Create Pull Request with name `Module-7-{TaskName}`
 3. Add screenshots to PR description
 4. Notify your mentor about completing the task
 

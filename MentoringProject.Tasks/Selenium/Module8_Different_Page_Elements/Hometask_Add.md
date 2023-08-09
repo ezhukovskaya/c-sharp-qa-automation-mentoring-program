@@ -15,7 +15,7 @@ Replace all web elements interactions in tests from [Home Task 7](Hometask.md) w
 ## After all check list
 
 1. Make two screenshots that your test passes successfully for both browsers (Chrome, Firefox)
-2. Create Pull Request with name `Module-7-Add-{TaskName}`
+2. Create Pull Request with name `Module-8-Add-{TaskName}`
 3. Add screenshots to PR description
 4. Notify your mentor about completing the task
 
