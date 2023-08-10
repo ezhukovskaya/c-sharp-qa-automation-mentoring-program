@@ -13,6 +13,8 @@
 
 Your task is to practice working with different Browser Actions
 
+Test website: http://the-internet.herokuapp.com/
+
 ### Scenario 1: Open New Window and Handle Tabs
 
 1. Navigate to the website. 
