@@ -177,6 +177,9 @@ var driver = new ChromeDriver("path/to/chromedriver.exe");
 
 #### Interacting with Web Elements
 
+In Selenium WebDriver, IWebElement is an important interface for representing an HTML element in your web pages. 
+Any HTML element is considered as a IWebElement in WebDriver.
+
 To interact with web elements, such as buttons, forms, or links, you can use the following basic methods provided by 
 Selenium WebDriver:
 
