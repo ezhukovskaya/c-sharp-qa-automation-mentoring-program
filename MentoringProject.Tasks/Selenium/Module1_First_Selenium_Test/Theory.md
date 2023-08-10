@@ -211,6 +211,41 @@ We need to ensure that the browser is closed after each test
 driver.Quit();
 ```
 
+### Step 5: Test Execution
+
+#### Visual Studio
+
+After adding **[Test]** attribute your test method appears in Test Explorer. To open Test Explorer follow the flow: 
+`Test` > `Test Explorer`
+
+![Test Explorer](./Resources/testExplorer.png)
+
+Test Explorer opens in bottom tab. There are test suits (class names) with the tests you've added
+
+![Test Explorer Tab](./Resources/testExplorerSuits.png)
+
+To launch the test you need to perform right click on test method and click **Run**
+
+![Test Run](./Resources/testRightClick.png)
+
+#### JetBrains Rider
+
+There are two ways how to launch test in JetBrains Rider
+
+##### Explorer
+
+To open Explorer you need to click Unit Test Tab in the left bottom or press `Alt` + `Shift` + `8`
+
+![Test Explorer](./Resources/testExplorerRider.png)
+
+To launch the test you need to perform right click on test method and click **Run Selected Unit Test**
+
+##### Direct Launch
+
+To launch the test you can open right menu next to the test method and click **Run**
+
+![Direct Launch](./Resources/directLaunch.png)
+
 Keep in mind that this is just a basic example, and Selenium provides many more features and functionalities 
 for comprehensive web application testing.
 
