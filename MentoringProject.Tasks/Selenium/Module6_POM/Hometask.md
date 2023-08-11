@@ -32,39 +32,39 @@ with meaningful comments for better understanding. Happy testing!
 #### Scenario 1: Valid Login
 
 
-| Step                               | Expected result                                                        |
-|------------------------------------|------------------------------------------------------------------------|
-| Go to the Login page.              | Login page is displayed.                                               |
-| Enter valid username and password. | Username and password fields are filled with valid credentials.        |
-| Click the Login button.            | User is successfully logged in and redirected to the Secure Area page. |
+| Step                                 | Expected result                                                        |
+|--------------------------------------|------------------------------------------------------------------------|
+| Go to the Form Authentication.       | Login page is displayed.                                               |
+| Enter valid username and password.   | Username and password fields are filled with valid credentials.        |
+| Click the Login button.              | User is successfully logged in and redirected to the Secure Area page. |
 
 #### Scenario 2: Invalid Login
 
 
-| Step                                 | Expected result                                                   |
-|--------------------------------------|-------------------------------------------------------------------|
-| Go to the Login page.                | Login page is displayed.                                          |
-| Enter invalid username and password. | Username and password fields are filled with invalid credentials. |
-| Click the Login button.              | An error message is displayed indicating missing credentials.     |
+| Step                                  | Expected result                                                   |
+|---------------------------------------|-------------------------------------------------------------------|
+| Go to the Form Authentication.        | Login page is displayed.                                          |
+| Enter invalid username and password.  | Username and password fields are filled with invalid credentials. |
+| Click the Login button.               | An error message is displayed 'Your username is invalid!'.        |
 
 #### Scenario 3: Logout after Login
 
 
-| Step                               | Expected result                                                        |
-|------------------------------------|------------------------------------------------------------------------|
-| Go to the Login page.              | Login page is displayed.                                               |
-| Enter valid username and password. | Username and password fields are filled with valid credentials.        |
-| Click the Login button.            | User is successfully logged in and redirected to the Secure Area page. |
-| Click the Logout button.           | Verify that the user is successfully logged out                        |
+| Step                                 | Expected result                                                        |
+|--------------------------------------|------------------------------------------------------------------------|
+| Go to the Form Authentication.       | Login page is displayed.                                               |
+| Enter valid username and password.   | Username and password fields are filled with valid credentials.        |
+| Click the Login button.              | User is successfully logged in and redirected to the Secure Area page. |
+| Click the Logout button.             | Verify that the user is successfully logged out                        |
 
 #### Scenario 4: Login with Empty Credentials
 
 
-| Step                                          | Expected result                                               |
-|-----------------------------------------------|---------------------------------------------------------------|
-| Go to the Login page.                         | Login page is displayed.                                      |
-| Leave the username and password fields empty. | Username and password fields are empty.                       |
-| Click the Login button.                       | An error message is displayed indicating missing credentials. |
+| Step                                          | Expected result                                              |
+|-----------------------------------------------|--------------------------------------------------------------|
+| Go to the Login page.                         | Login page is displayed.                                     |
+| Leave the username and password fields empty. | Username and password fields are empty.                      |
+| Click the Login button.                       | An error message is displayed 'Your username is invalid!'.   |
 
 ### Checkboxes Page:
 
