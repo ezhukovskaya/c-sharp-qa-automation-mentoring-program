@@ -15,13 +15,13 @@ Practicing using `IWebElement` Wrappers
 
 ## Home Task
 
-1. Create `IWebElement` wrappers for the following web elements: Button, TextBox, DropDown, CheckBox, Range
-2. Refactor all your Page objects via using new wrappers
+1. Create `IWebElement` wrappers for the following web elements: Button, TextBox, DropDown
+2. Refactor all your Page objects via using new wrappers for PHP Travels project
 
 ## After all check list
 
 1. Make two screenshots that your test passes successfully for both browsers (Chrome, Firefox)
-2. Create Pull Request with name `Module-9-{TaskName}`
+2. Create Pull Request with name `Module-10-{TaskName}`
 3. Add screenshots to PR description
 4. Notify your mentor about completing the task
 

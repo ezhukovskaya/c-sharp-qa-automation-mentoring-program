@@ -112,11 +112,48 @@ Test website: http://the-internet.herokuapp.com/
 | Click the file link                  | File download dialog is displayed  |
 | Verify downloaded file               | Downloaded file matches expected   |
 
+### Test Scenario 11: Validate data sorted by First Name
+
+| Step                                                           | Expected Result                                                  |
+|----------------------------------------------------------------|------------------------------------------------------------------|
+| Click 'Sortable Data Tables' link from the homepage            | 'Sortable Data Tables' page is displayed                         |
+| Click on the header of the 'First Name' column                 | The data in the 'First Name' column gets sorted                  |
+| Verify that the data are sorted correctly                      | The data in the 'First Name' column is sorted in ascending order |
+
+### Test Scenario 12: Test sorting toggle functionality for Last Name
+
+| Step                                                           | Expected Result                                                               |
+|----------------------------------------------------------------|-------------------------------------------------------------------------------|
+| Click 'Sortable Data Tables' link from the homepage            | 'Sortable Data Tables' page is displayed                                      |
+| Click on the 'Last Name' header twice                          | The 'Last Name' column sorting toggles between ascending and descending order |
+
+### Test Scenario 13: Validate row data
+
+| Step                                                           | Expected Result                                                                  |
+|----------------------------------------------------------------|----------------------------------------------------------------------------------|
+| Click 'Sortable Data Tables' link from the homepage            | 'Sortable Data Tables' page is displayed                                         |
+| Check the first data row and validate column-value pairing     | The data in the first row corresponds correctly to the respective column headers |
+
+### Test Scenario 14: Test navigation and return to Page
+
+| Step                                                                           | Expected Result                                                                                 |
+|--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| Click 'Sortable Data Tables' link from the homepage                            | 'Sortable Data Tables' page is displayed                                                        |
+| Navigate to another page from 'Sortable Data Tables' page and then return back | The 'Sortable Data Tables' page loads as fresh and any sorting of columns done earlier is reset |
+
+### Test Scenario 15: Validate data sorted by Due column
+
+| Step                                                           | Expected Result                                                                                                                                  |
+|----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| Click 'Sortable Data Tables' link from the homepage            | 'Sortable Data Tables' page is displayed                                                                                                         |
+| Click on the header of the 'Due' column                        | The data in the 'Due' column gets sorted                                                                                                         |
+| Verify that the data are sorted correctly                      | The data in the 'Due' column is sorted in ascending order objects may not be sorted in regular number or alphabetic order as they represent date |
+
 
 ## After all check list
 
 1. Make two screenshots that your test passes successfully for both browsers (Chrome, Firefox)
-2. Create Pull Request with name `Module-8-{TaskName}`
+2. Create Pull Request with name `Module-6-{TaskName}`
 3. Add screenshots to PR description
 4. Notify your mentor about completing the task
 

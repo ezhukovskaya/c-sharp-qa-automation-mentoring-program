@@ -27,44 +27,44 @@ Test website: http://the-internet.herokuapp.com/
 instantiate the browser for your test scenarios. Make sure your code follows best practices and is well-structured 
 with meaningful comments for better understanding. Happy testing!
 
-### Login Page:
+### Form Authentication Page:
 
 #### Scenario 1: Valid Login
 
 
-| Step                                 | Expected result                                                        |
-|--------------------------------------|------------------------------------------------------------------------|
-| Go to the Form Authentication.       | Login page is displayed.                                               |
-| Enter valid username and password.   | Username and password fields are filled with valid credentials.        |
-| Click the Login button.              | User is successfully logged in and redirected to the Secure Area page. |
+| Step                                | Expected result                                                        |
+|-------------------------------------|------------------------------------------------------------------------|
+| Go to the Form Authentication page. | Login page is displayed.                                               |
+| Enter valid username and password.  | Username and password fields are filled with valid credentials.        |
+| Click the Login button.             | User is successfully logged in and redirected to the Secure Area page. |
 
 #### Scenario 2: Invalid Login
 
 
-| Step                                  | Expected result                                                   |
-|---------------------------------------|-------------------------------------------------------------------|
-| Go to the Form Authentication.        | Login page is displayed.                                          |
-| Enter invalid username and password.  | Username and password fields are filled with invalid credentials. |
-| Click the Login button.               | An error message is displayed 'Your username is invalid!'.        |
+| Step                                 | Expected result                                                   |
+|--------------------------------------|-------------------------------------------------------------------|
+| Go to the Form Authentication page.  | Login page is displayed.                                          |
+| Enter invalid username and password. | Username and password fields are filled with invalid credentials. |
+| Click the Login button.              | An error message is displayed 'Your username is invalid!'.        |
 
 #### Scenario 3: Logout after Login
 
 
-| Step                                 | Expected result                                                        |
-|--------------------------------------|------------------------------------------------------------------------|
-| Go to the Form Authentication.       | Login page is displayed.                                               |
-| Enter valid username and password.   | Username and password fields are filled with valid credentials.        |
-| Click the Login button.              | User is successfully logged in and redirected to the Secure Area page. |
-| Click the Logout button.             | Verify that the user is successfully logged out                        |
+| Step                                | Expected result                                                        |
+|-------------------------------------|------------------------------------------------------------------------|
+| Go to the Form Authentication page. | Login page is displayed.                                               |
+| Enter valid username and password.  | Username and password fields are filled with valid credentials.        |
+| Click the Login button.             | User is successfully logged in and redirected to the Secure Area page. |
+| Click the Logout button.            | Verify that the user is successfully logged out                        |
 
 #### Scenario 4: Login with Empty Credentials
 
 
-| Step                                          | Expected result                                              |
-|-----------------------------------------------|--------------------------------------------------------------|
-| Go to the Login page.                         | Login page is displayed.                                     |
-| Leave the username and password fields empty. | Username and password fields are empty.                      |
-| Click the Login button.                       | An error message is displayed 'Your username is invalid!'.   |
+| Step                                           | Expected result                                              |
+|------------------------------------------------|--------------------------------------------------------------|
+| Go to the Form Authentication page.            | Login page is displayed.                                     |
+| Leave the username and password fields empty.  | Username and password fields are empty.                      |
+| Click the Login button.                        | An error message is displayed 'Your username is invalid!'.   |
 
 ### Checkboxes Page:
 
@@ -141,7 +141,7 @@ with meaningful comments for better understanding. Happy testing!
 ### After all check list
 
 1. Make two screenshots that your test passes successfully for both browsers (Chrome, Firefox)
-2. Create Pull Request with name `Module-6-{TaskName}`
+2. Create Pull Request with name `Module-7-{TaskName}`
 3. Add screenshots to PR description
 4. Notify your mentor about completing the task
 

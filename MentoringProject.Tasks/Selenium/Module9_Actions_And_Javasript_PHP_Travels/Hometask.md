@@ -10,8 +10,8 @@ Task from [Home Task 7](Hometask.md) must be done, approved and merged
 
 ## Home Task
 
-Replace all web elements interactions in tests from [Home Task 7](Hometask.md) with Actions and JavaScript and add one more 
-suit according to the following test scenarios
+In this task you need to automate the provided test scenarios using Actions and JavaScript instead of regular Selenium 
+interactions
 
 WebSite: https://phptravels.net
 
@@ -64,7 +64,7 @@ WebSite: https://phptravels.net
 ## After all check list
 
 1. Make two screenshots that your test passes successfully for both browsers (Chrome, Firefox)
-2. Create Pull Request with name `Module-8-Add-{TaskName}`
+2. Create Pull Request with name `Module-9-{TaskName}`
 3. Add screenshots to PR description
 4. Notify your mentor about completing the task
 

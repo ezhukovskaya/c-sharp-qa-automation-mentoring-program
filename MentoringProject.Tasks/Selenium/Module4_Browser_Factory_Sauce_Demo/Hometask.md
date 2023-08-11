@@ -24,14 +24,14 @@ other tests. By default, no parallel execution takes place.
 ## Home Task
 
 Your task is automate the test cases below and implement **Browser Factory pattern**
-1. Refactor the code from the [Homework BaseTest](../Module3/Hometask.md) using Browser Factory pattern
+1. Refactor the code from the [Homework BaseTest](../Module3_BaseTest_Sauce_Demo/Hometask.md) using Browser Factory pattern
 2. You must add possibility to launch tests using Chrome and Firefox
 3. Set up your tests so they can run in parallel
 
 ### After all check list
 
 1. Make two screenshots that your test passes successfully for both browsers
-2. Create Pull Request with name `Module-5-{TaskName}`
+2. Create Pull Request with name `Module-4-{TaskName}`
 3. Add screenshots to PR description
 4. Notify your mentor about completing the task
 

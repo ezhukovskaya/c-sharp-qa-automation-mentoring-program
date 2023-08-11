@@ -73,10 +73,49 @@ Test website: https://phptravels.net
 | Fill in the required fields (First Name, Last Name, Mobile Number, Email, Password, Confirm Password) | The entered data should be filled in the respective fields                       |
 | Click on the 'CREATE AN ACCOUNT' button                                                               | A user account should be successfully created and confirmation message displayed |
 
+### Scenario 6: Check Offer Details
+
+| Step                                                                                             | Expected Result                                                                       |
+|--------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| Navigate to https://phptravels.net                                                               | The PHP Travels homepage should be displayed                                          |
+| Click on the "Offers" menu item                                                                  | The "Offers" page should be displayed                                                 |
+| Click on one of the offers listed                                                                | The chosen offer detail page is displayed                                             |
+| Verify all the details of the offer presented (such as pricing, number of nights, details, etc.) | All the details should be correctly displayed and should match with the offer listing |
+
+### Scenario 7: Navigation Test
+
+| Step                                                                                           | Expected Result                                                       |
+|------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| Navigate to https://phptravels.net                                                             | The PHP Travels homepage should be displayed                          |
+| Navigate using the menu bar to each of the different pages (like Flights, Hotels, Tours, etc.) | Each page is successfully displayed without any errors or load issues |
+
+### Scenario 8: Contact Us Form
+
+| Step                                                                                     | Expected Result                                                      |
+|------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| Navigate to https://phptravels.net                                                       | The PHP Travels homepage should be displayed                         |
+| Click on the "Contact Us" menu item                                                      | The "Contact Us" page should be displayed                            |
+| Fill in the required fields (Name, Email, Subject, Message) and click on "Submit" button | A success message should be shown indicating the message is received |
+
+### Scenario 9: Currency Change
+
+| Step                                                                                      | Expected Result                                                                     |
+|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| Navigate to https://phptravels.net                                                        | The PHP Travels homepage should be displayed                                        |
+| From the top right corner, click on the currency dropdown and select a different currency | The displayed prices on the page should change to the unit of the selected currency |
+| Check some prices before and after the change for validation                              | The prices should match with the currency conversion rate                           |
+
+### Scenario 10: Newsletter Subscription
+
+| Step                                                                                                                    | Expected Result                                                           |
+|-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| Navigate to https://phptravels.net                                                                                      | The PHP Travels homepage should be displayed                              |
+| Scroll down to the bottom of the page, enter a valid email address in the 'Subscribe' input field and click 'Subscribe' | A success alert should be shown indicating subscription to the Newsletter |
+
 ## After all check list
 
 1. Make two screenshots that your test passes successfully for both browsers (Chrome, Firefox)
-2. Create Pull Request with name `Module-7-{TaskName}`
+2. Create Pull Request with name `Module-8-{TaskName}`
 3. Add screenshots to PR description
 4. Notify your mentor about completing the task
 
