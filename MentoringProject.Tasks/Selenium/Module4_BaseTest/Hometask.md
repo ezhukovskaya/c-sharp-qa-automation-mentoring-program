@@ -58,7 +58,7 @@ logically proved
 7. Verify that the cart icon in the top-right corner displays the correct number of items added (e.g., 1 item).
 8. Click the cart icon to navigate to the cart page.
 9. On the cart page, find and click the "Remove" button for the added product.
-10. Verify that the cart is now empty and displays a message like "Your cart is empty."
+10. Verify that the cart is now empty"
 
 ### Scenario 4: Logout Functionality
 1. Navigate to the "https://www.saucedemo.com/" URL.
