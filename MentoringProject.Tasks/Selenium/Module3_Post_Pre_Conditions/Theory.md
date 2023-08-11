@@ -301,11 +301,17 @@ public class WithSetUpAndTearDownExample
   </tr>
 </table>
 
+**NOTE** 
+1. If you combine `SetUp` and `OneTimeSetUp` in one suit, that means that `OneTimeSetUp` will be executed first and
+`SetUp` will be executed after
+2. If you combine `TearDown` and `OneTimeTearDown` in one suit, that means that `TearDown` will be executed first and
+   `OneTimeTearDown` will be executed after
+
 #### Without OneTimeSetUp and OneTimeTearDown:
 
 In this approach, the test setup and teardown are explicitly repeated within each test method. It can lead to code duplication and maintenance challenges.
 
-#### With SetUp and TearDown:
+#### With SetUp/OneTimeSetUp and TearDown/OneTimeTearDown:
 
 - **Reduced Code Duplication**: WebDriver initialization and website navigation are performed once for all test methods, reducing redundancy.
 - **Faster Test Execution**: Single initialization speeds up test runs by avoiding redundant browser setups. 
