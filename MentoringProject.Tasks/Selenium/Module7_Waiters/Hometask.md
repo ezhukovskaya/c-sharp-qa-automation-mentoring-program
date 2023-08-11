@@ -17,58 +17,61 @@ Practicing using Explicit/Implicit/Fluent waits
 
 ## Home Task
 
-You are tasked with testing various functionalities of the website "https://www.the-internet.herokuapp.com" using C# Selenium with
+You are tasked with testing various functionalities of the website "https://phptravels.net" using C# Selenium with
 NUnit. Your goal is to create automated test scenarios to ensure that different features of the website are working as
 expected. You should avoid using Thread.Sleep for waits and instead use explicit waits, such as WebDriverWait,
 to ensure reliable and stable test execution.
 
-Test website: http://the-internet.herokuapp.com/
+Test website: https://phptravels.net
 
-### Scenario 1: Form Authentication - Failed Login
+### Scenario 1: Search Hotels
 
-| Step Description                                     | Expected Result                                                |
-|------------------------------------------------------|----------------------------------------------------------------|
-| Navigate to the Login page.                          | The Login page is displayed.                                   |
-| Enter invalid credentials (username and password).   | The username and password fields are filled with invalid data. |
-| Click the Login button.                              | An error message is displayed indicating failed login attempt. |
+| Step                                                                                          | Expected Result                                               |
+|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------|
+| Navigate to https://phptravels.net                                                            | The PHP Travels homepage should be displayed                  |
+| Click on the "Hotels" menu item                                                               | The "Hotels" page should be displayed                         |
+| Enter a location in the search box and select a location from the dropdown auto-complete list | The selected location should be filled in the search box      |
+| Choose Check-in and Check-out dates from the date picker                                      | The selected dates should be reflected in the date input box  |
+| Click on the "Search" button                                                                  | A list of hotels in the selected location should be displayed |
 
-### Scenario 2: Dynamic Loading - Element Rendered
+### Scenario 2: Book a Flight
 
-| Step Description                                               | Expected Result                                          |
-|----------------------------------------------------------------|----------------------------------------------------------|
-| Navigate to the Dynamic Loading page.                          | The Dynamic Loading page is displayed.                   |
-| Click on the "Example 1: Element on page that is hidden" link. | The Example 1 page is displayed.                         |
-| Click the "Start" button to trigger the loading.               | The loading spinner or message is displayed.             |
-| Wait for the element to be visible.                            | The hidden element is now visible on the page.           |
+| Step                                                                                                                      | Expected Result                                                                                      |
+|---------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+| Navigate to https://phptravels.net                                                                                        | The PHP Travels homepage is displayed                                                                |
+| Click on the "Flights" menu item                                                                                          | The "Flights" page is displayed                                                                      |
+| Enter the departure and destination locations in the search box and select locations from the dropdown auto-complete list | The selected locations are filled in the search box                                                  |
+| Choose departure and return dates from the date picker                                                                    | The selected dates are reflected in the date input box                                               |
+| Click on the "Search" button                                                                                              | A list of available flights between the selected locations on the selected dates should be displayed |
 
-### Scenario 3: Checkboxes - Toggle Selection
+### Scenario 3: Car Booking
 
-| Step Description                                       | Expected Result                                 |
-|--------------------------------------------------------|-------------------------------------------------|
-| Navigate to the Checkboxes page.                       | The Checkboxes page is displayed.               |
-| Verify the initial state of the checkboxes.            | The checkboxes are unchecked by default.        |
-| Click the first checkbox to toggle its selection.      | The first checkbox becomes checked.             |
-| Click the second checkbox to toggle its selection.     | The second checkbox becomes checked.            |
-| Verify that both checkboxes can be toggled on/off.     | Both checkboxes can be checked or unchecked.    |
+| Step                                                                                                    | Expected Result                                                       |
+|---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| Navigate to https://phptravels.net                                                                      | The PHP Travels homepage should be displayed                          |
+| Click on the "Cars" menu item                                                                           | The "Cars" page should be displayed                                   |
+| Enter the pick up location in the search box and select a location from the dropdown auto-complete list | The selected location should be filled in the search box              |
+| Choose pick-up and drop-off dates from the date picker                                                  | The selected dates should be reflected in the date input box          |
+| Click on the "Search" button                                                                            | A list of available cars in the selected location should be displayed |
 
-### Scenario 4: File Upload - Successful Upload
+### Scenario 4: Blog Post Review
 
-| Step Description                              | Expected Result                                                                     |
-|-----------------------------------------------|-------------------------------------------------------------------------------------|
-| Navigate to the File Upload page.             | The File Upload page is displayed.                                                  |
-| Upload a file using the "Choose File" button. | The file is selected for upload.                                                    |
-| Click the "Upload" button.                    | The file upload is successful, and the uploaded file name is displayed on the page. |
+| Step                                                                              | Expected Result                                            |
+|-----------------------------------------------------------------------------------|------------------------------------------------------------|
+| Navigate to https://phptravels.net                                                | The PHP Travels homepage should be displayed               |
+| Click on "Blog" menu item                                                         | The "Blog" page should be displayed                        |
+| Click on one of the blog posts                                                    | The chosen blog post page is displayed                     |
+| Scroll down to the comments section                                               | The comments section should be displayed                   |
+| Post a comment in the "Leave a Reply" text box and click on "Post Comment" button | The posted comment should be displayed below the blog post |
 
-### Scenario 5: Dynamic Controls - Checkbox Enable/Disable
+### Scenario 5: Sign Up
 
-| Step Description                                      | Expected Result                                                                            |
-|-------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| Navigate to the Dynamic Controls page.                | The Dynamic Controls page is displayed.                                                    |
-| Click the "Remove" button to remove the checkbox.     | The checkbox is removed from the page.                                                     |
-| Wait for the checkbox to disappear.                   | The checkbox is no longer visible on the page.                                             |
-| Click the "Add" button to add the checkbox back.      | The checkbox is added back to the page.                                                    |
-| Wait for the checkbox to appear and become clickable. | The checkbox is visible and enabled, ready to be interacted with (selected or deselected). |
-
+| Step                                                                                                  | Expected result                                                                  |
+|-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| Navigate to https://phptravels.net                                                                    | The PHP Travels homepage should be displayed                                     |
+| Click on 'My Account' and then 'Sign Up'                                                              | The 'Join us for FREE and get access to all features.' page should be displayed  |
+| Fill in the required fields (First Name, Last Name, Mobile Number, Email, Password, Confirm Password) | The entered data should be filled in the respective fields                       |
+| Click on the 'CREATE AN ACCOUNT' button                                                               | A user account should be successfully created and confirmation message displayed |
 
 ## After all check list
 
