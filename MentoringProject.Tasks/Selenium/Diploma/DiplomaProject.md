@@ -228,17 +228,22 @@ principles and implement a browser factory.
 | 8. Click on an employee from the results list                | Employee's personal details are displayed                  |
 | 9. Log out from the user profile dropdown                    | User is logged out                                         |
 
-### Scenario 16: Verify Search Functionality
+### Scenario 16: Validate Candidate Management in Recruitment Functionality
 
-| Step                                        | Expected Result                                            |
-|---------------------------------------------|------------------------------------------------------------|
-| 1. Launch the application                   | The login page opens                                       |
-| 2. Enter valid username                     | Username is in the username field                          |
-| 3. Enter valid password                     | Password is in the password field                          |
-| 4. Click on login button                    | User gets logged in and gets redirected to their dashboard |
-| 5. Enter a keyword in the search box        | Keyword is entered                                         |
-| 6. Click search button                      | Search results are displayed                               |
-| 7. Verify results match the entered keyword | Results matched with the entered keyword                   |
+| Steps                                                            | Expected Result                                          |
+|------------------------------------------------------------------|----------------------------------------------------------|
+| 1. Launch the application                                        | The login page opens                                     |
+| 2. Enter valid username                                          | Username is entered in the username field                |
+| 3. Enter valid password                                          | Password is entered in the password field                |
+| 4. Click on login button                                         | User is logged in and redirected to the dashboard        |
+| 5. Navigate to 'Recruitment => Candidates' from the main menu    | 'Candidates' page is displayed                           |
+| 6. Click on the 'Add' button                                     | 'Add Candidate' form is displayed                        |
+| 7. Fill out the form with candidate details and click 'Save'     | The form is submitted and the new candidate is added     |
+| 8. Validate the new candidate is listed in the 'Candidates' list | The new candidate is visible in the list                 |
+| 9. Choose the newly added candidate, click on the checkbox       | The checkbox next to the candidate's details is selected |
+| 10. Click on 'Delete' button                                     | Confirmation pop-up is displayed                         |
+| 11. Confirm the deletion                                         | The selected candidate is deleted                        |
+| 12. Validate the candidate is removed from the 'Candidates' list | The candidate's details are removed from the list        |
 
 ### Scenario 17: Reset Password
 
