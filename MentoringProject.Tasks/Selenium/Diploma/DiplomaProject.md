@@ -68,66 +68,90 @@ principles and implement a browser factory.
 | 7. Verify if the results match the entered keyword | Results match the entered keyword                          |
 | 8. Logout from the user profile dropdown           | User is logged out                                         |
 
-## Scenario 6: Add New User Group
+### Scenario 5: Validate Performance Management Functionality
 
-| Steps                                           | Expected Result                                            |
-|-------------------------------------------------|------------------------------------------------------------|
-| 1. Launch the application                       | The login page opens                                       |
-| 2. Enter valid username                         | Username is in the username field                          |
-| 3. Enter valid password                         | Password is in the password field                          |
-| 4. Click on login button                        | User gets logged in and gets redirected to their dashboard |
-| 5. Navigate to User Management from the menu    | User Management options are displayed                      |
-| 6. Click on 'User Groups'                       | User Groups is opened                                      |
-| 7. Click on 'Add' button                        | Redirected to 'Add User Group' form                        |
-| 8. Enter necessary information and click 'Save' | New user group is saved                                    |
-| 9. Verify the new group is in the list          | New group is visible on the list                           |
+| Steps                                                                                   | Expected Result                                             |
+|-----------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| 1. Launch the application                                                               | The login page opens                                        |
+| 2. Enter valid username                                                                 | Username is in the username field                           |
+| 3. Enter valid password                                                                 | Password is in the password field                           |
+| 4. Click on login button                                                                | User gets logged in and gets redirected to their dashboard  |
+| 5. Navigate to 'Performance => Configure => Key Performance Indicators' from the menu   | Key Performance Indicators page is displayed                |
+| 6. Click on the 'Add' button                                                            | 'Add Key Performance Indicator' form page is displayed      |
+| 7. Fill in the necessary details and click 'Save'                                       | Form gets submitted and the new indicator is saved          |
+| 8. Validate the new performance indicator is listed in the KPI list                     | The new performance indicator is listed in the KPI list     |
+| 9. Choose a Key Performance Indicator, click on the checkbox                            | The checkbox is selected                                    |
+| 10. Click on 'Delete' button                                                            | Confirmation pop-up is displayed                            |
+| 11. Confirm the deletion                                                                | The indicator is deleted                                    |
+| 12. Validate the KPI record got deleted in the KPI list                                 | The indicator is not listed in the KPI list                 |
+
+### Scenario 6: Validate Admin Function
+
+| Steps                                         | Expected Result                                            |
+|-----------------------------------------------|------------------------------------------------------------|
+| 1. Launch the application                     | The login page opens                                       |
+| 2. Enter valid username                       | Username is in the username field                          |
+| 3. Enter valid password                       | Password is in the password field                          |
+| 4. Click on login button                      | User gets logged in and gets redirected to their dashboard |
+| 5. Click on 'Admin' on the menu               | Admin options are displayed                                |
+| 6. Validate the presence of user management   | User Management options are available                      |
+| 7. Click on 'Job' link under Admin            | Job options are displayed                                  |
+| 8. Validate that 'Job Titles' link is present | 'Job Titles' link is available                             |
 
 ### Scenario 7: Edit Nationality
 
-| Step                                                       | Expected Result                                            |
-|------------------------------------------------------------|------------------------------------------------------------|
-| 1. Launch the application                                  | The login page opens                                       |
-| 2. Enter valid username                                    | Username is in the username field                          |
-| 3. Enter valid password                                    | Password is in the password field                          |
-| 4. Click on login button                                   | User gets logged in and gets redirected to their dashboard |
-| 5. Navigate to the 'Admin => Nationalities' panel          | Nationalities table is displayed                           |
-| 6. Click on an available nationality                       | The details of the nationality are visible                 |
-| 7. Click on 'Edit' button and change the necessary details | Details are updated                                        |
-| 8. Click on 'Save'                                         | The changes are saved and displayed                        | 
+| Step                                                                          | Expected Result                                            |
+|-------------------------------------------------------------------------------|------------------------------------------------------------|
+| 1. Launch the application                                                     | The login page opens                                       |
+| 2. Enter valid username                                                       | Username is in the username field                          |
+| 3. Enter valid password                                                       | Password is in the password field                          |
+| 4. Click on login button                                                      | User gets logged in and gets redirected to their dashboard |
+| 5. Navigate to the 'Admin => More => Nationalities' panel                     | Nationalities table is displayed                           |
+| 7. Click on 'Edit' button on any nationality and change the necessary details | Details are updated                                        |
+| 8. Click on 'Save'                                                            | The changes are saved and displayed                        | 
 
-### Scenario 8: Logout
+### Scenario 8: Validate Dashboard Access
 
-| Step                                                       | Expected Result                                            |
-|------------------------------------------------------------|------------------------------------------------------------|
-| 1. Open the website                                        | Website's login page is visible                            |
-| 2. Log in to the application                               | User is logged in                                          |
-| 3. Click on the 'Logout' button                            | User is logged out and redirected to the login page        |
+| Steps                                                | Expected Result                                               |
+|------------------------------------------------------|---------------------------------------------------------------|
+| 1. Launch the application                            | The login page opens                                          |
+| 2. Enter valid username                              | Username is in the username field                             |
+| 3. Enter valid password                              | Password is in the password field                             |
+| 4. Click on login button                             | User gets logged in and gets redirected to their dashboard    |
+| 5. Click on 'Dashboard' on the menu                  | Dashboard page is displayed                                   |
+| 6. Validate the presence of the dashboard's elements | Dashboard elements such as quick launch toolbar are available |
 
-### Scenario 9: Add New Employee
+### Scenario 9: Validate Recruitment Management Functionality
 
-| Step                                               | Expected Result                                            |
-|----------------------------------------------------|------------------------------------------------------------|
-| 1. Launch the application                          | The login page opens                                       |
-| 2. Enter valid username                            | Username is in the username field                          |
-| 3. Enter valid password                            | Password is in the password field                          |
-| 4. Click on login button                           | User gets logged in and gets redirected to their dashboard |
-| 5. Click on 'PIM' on the menu                      | PIM options are displayed                                  |
-| 6. Click on 'Add Employee'                         | Add Employee form is visible                               |
-| 7. Fill in the necessary details                   | Details are entered in respective fields                   |
-| 8. Click on 'Save' button                          | The new employee is saved and displayed                    | 
+| Steps                                                            | Expected Result                                             |
+|------------------------------------------------------------------|-------------------------------------------------------------|
+| 1. Launch the application                                        | The login page opens                                        |
+| 2. Enter valid username                                          | Username is in the username field                           |
+| 3. Enter valid password                                          | Password is in the password field                           |
+| 4. Click on login button                                         | User gets logged in and gets redirected to their dashboard  |
+| 5. Navigate to 'Recruitment => Vacancies' from the main menu     | Vacancies page is displayed                                 |
+| 6. Click on 'Add' button                                         | 'Add Job Vacancy' form page is displayed                    |
+| 7. Fill in the necessary details and click 'Save'                | Form gets submitted and the new vacancy is saved            |
+| 8. Navigate back to 'Recruitment => Vacancies'                   | Vacancies page is displayed                                 |
+| 9. Validate the new vacancy is listed in the job vacancies       | The new vacancy is listed in the job vacancies              |
+| 10. Click on 'Delete' button                                     | Confirmation pop-up is displayed                            |
+| 11. Confirm the deletion                                         | The vacancy is deleted                                      |
+| 12. Navigate back to 'Recruitment => Vacancies'                  | Vacancies page is displayed                                 |
+| 13. Validate the vacancy record got deleted in the job vacancies | The Vacancy is not listed in the job vacancies              |
 
 ### Scenario 10: Assign Leave
 
-| Step                                        | Expected Result                                            |
-|---------------------------------------------|------------------------------------------------------------|
-| 1. Launch the application                   | The login page opens                                       |
-| 2. Enter valid username                     | Username is in the username field                          |
-| 3. Enter valid password                     | Password is in the password field                          |
-| 4. Click on login button                    | User gets logged in and gets redirected to their dashboard |
-| 5. Click on 'Leave' on the menu             | Leave options are displayed                                |
-| 6. Click on 'Assign Leave'                  | Assign leave form is visible                               |
-| 7. Fill in the necessary details            | Details are entered                                        |
-| 8. Click on 'Assign'                        | Leave is assigned                                          | 
+| Steps                                                     | Expected Result                                            |
+|-----------------------------------------------------------|------------------------------------------------------------|
+| 1. Launch the application                                 | The login page opens                                       |
+| 2. Enter valid username                                   | Username is in the username field                          |
+| 3. Enter valid password                                   | Password is in the password field                          |
+| 4. Click on login button                                  | User gets logged in and gets redirected to their dashboard |
+| 5. Click on 'Leave' on the main menu                      | Leave options are displayed                                |
+| 6. Click on 'More' on the Leave menu                      |                                                            |
+| 7. Click on 'Assign Leave' from dropdown menu             | 'Assign Leave' page is displayed                           |
+| 8. Enter employee name, types of leave, date and comments | Corresponding fields are filled                            |
+| 9. Click 'Assign' button                                  | Leave gets assigned for the specified employee             |
 
 ### Scenario 11: Add Job Title
 
@@ -168,11 +192,10 @@ principles and implement a browser factory.
 | 6. Click on 'Employee List'                                 | Employee list is visible                                   |
 | 7. Enter a search parameter in the search bar               | Parameter is entered                                       |
 | 8. Click on 'Search'                                        | Search results are displayed                               |
-| 9. Log out from the user profile dropdown                   | User is logged out                                         | 
-| 10. Click on an employee from the results list              | Employee's personal details are displayed                  |
-| 11. Click on 'Edit' button and change the necessary details | Details are updated                                        |
-| 12. Click on 'Save'                                         | Changes are saved and displayed                            |
-| 13. Log out from the user profile dropdown                  | User is logged out                                         |
+| 9. Click on an employee from the results list               | Employee's personal details are displayed                  |
+| 10. Click on 'Edit' button and change the necessary details | Details are updated                                        |
+| 11. Click on 'Save'                                         | Changes are saved and displayed                            |
+| 12. Log out from the user profile dropdown                  | User is logged out                                         |
 
 ### Scenario 14: Delete Employee
 
@@ -226,18 +249,22 @@ principles and implement a browser factory.
 | 3. Enter registered email            | Email is entered                                     |
 | 4. Click on submit button            | Confirmation message for password reset is displayed |
 
-### Scenario 18: Validate Pagination
+### Scenario 18: Validate Job Titles Management Functionality
 
-| Step                                                             | Expected Result                                            |
-|------------------------------------------------------------------|------------------------------------------------------------|
-| 1. Launch the application                                        | The login page opens                                       |
-| 2. Enter valid username                                          | Username is in the username field                          |
-| 3. Enter valid password                                          | Password is in the password field                          |
-| 4. Click on login button                                         | User gets logged in and gets redirected to their dashboard |
-| 5. Navigate to a page that has pagination (e.g., Employee List)  | Page with pagination is displayed                          |
-| 6. Click on the previous button of pagination                    | Previous page is loaded                                    |
-| 7. Click on the last page button of pagination                   | Last page is loaded                                        |
-| 8. Click on the first page button of pagination                  | First page is loaded                                       |
+| Steps                                                          | Expected Result                                          |
+|----------------------------------------------------------------|----------------------------------------------------------|
+| 1. Launch the application                                      | The login page opens                                     |
+| 2. Enter valid username                                        | Username is in the username field                        |
+| 3. Enter valid password                                        | Password is in the password field                        |
+| 4. Click on login button                                       | User gets logged in and is redirected to their dashboard |
+| 5. Navigate to 'Admin => Job => Job Titles' from the main menu | 'Job Titles' page is displayed                           |
+| 6. Click on the 'Add' button                                   | 'Add Job Title' form page is displayed                   |
+| 7. Fill in the necessary details and click 'Save'              | Form gets submitted and the new job title is saved       |
+| 8. Validate the new job title in the job titles list           | The new job title is listed                              |
+| 9. Choose a job title, click on the checkbox                   | The checkbox is selected                                 |
+| 10. Click on 'Delete' button                                   | Confirmation pop-up is displayed                         |
+| 11. Confirm the deletion                                       | The job title is deleted                                 |
+| 12. Validate the job title got deleted from the list           | The job title is not in the list anymore                 |
 
 ### Scenario 19: Validate Add Custom Fields to Employee Profile
 
@@ -264,7 +291,7 @@ principles and implement a browser factory.
 | 3. Enter valid password                     | Password is in the password field                          |
 | 4. Click on login button                    | User gets logged in and gets redirected to their dashboard |
 | 5. Navigate to 'PIM > Employee List' page   | Employee List page gets displayed                          |
-| 6. Click on an employee                     | Employee Profile page gets displayed                       |
+| 6. Click Edit on an employee                | Employee Profile page gets displayed                       |
 | 7. Navigate to 'Qualifications' tab         | Qualifications tab is opened                               |
 | 8. Click on 'Add' button in Skill section   | Skill form gets displayed                                  |
 | 9. Fill in the form and click 'Save' button | Skill is added                                             |
