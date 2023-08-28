@@ -70,20 +70,20 @@ principles and implement a browser factory.
 
 ### Scenario 5: Validate Performance Management Functionality
 
-| Steps                                                                                   | Expected Result                                             |
-|-----------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| 1. Launch the application                                                               | The login page opens                                        |
-| 2. Enter valid username                                                                 | Username is in the username field                           |
-| 3. Enter valid password                                                                 | Password is in the password field                           |
-| 4. Click on login button                                                                | User gets logged in and gets redirected to their dashboard  |
-| 5. Navigate to 'Performance => Configure => Key Performance Indicators' from the menu   | Key Performance Indicators page is displayed                |
-| 6. Click on the 'Add' button                                                            | 'Add Key Performance Indicator' form page is displayed      |
-| 7. Fill in the necessary details and click 'Save'                                       | Form gets submitted and the new indicator is saved          |
-| 8. Validate the new performance indicator is listed in the KPI list                     | The new performance indicator is listed in the KPI list     |
-| 9. Choose a Key Performance Indicator, click on the checkbox                            | The checkbox is selected                                    |
-| 10. Click on 'Delete' button                                                            | Confirmation pop-up is displayed                            |
-| 11. Confirm the deletion                                                                | The indicator is deleted                                    |
-| 12. Validate the KPI record got deleted in the KPI list                                 | The indicator is not listed in the KPI list                 |
+| Steps                                                                                 | Expected Result                                                  |
+|---------------------------------------------------------------------------------------|------------------------------------------------------------------|
+| 1. Launch the application                                                             | The login page opens                                             |
+| 2. Enter valid username                                                               | Username is in the username field                                |
+| 3. Enter valid password                                                               | Password is in the password field                                |
+| 4. Click on login button                                                              | User gets logged in and gets redirected to their dashboard       |
+| 5. Navigate to 'Performance => Configure => Key Performance Indicators' from the menu | Key Performance Indicators page is displayed                     |
+| 6. Click on the 'Add' button                                                          | 'Add Key Performance Indicator' form page is displayed           |
+| 7. Fill in the necessary details and click 'Save'                                     | Form gets submitted and the new indicator is saved               |
+| 8. Validate the new performance indicator is listed in the KPI list                   | The new performance indicator is listed in the KPI list          |
+| 9. Choose a Key Performance Indicator, click on the checkbox                          | The checkbox is selected and 'Delete Selected' button displays   |
+| 10. Click on 'Delete Selected'                                                        | Confirmation pop-up is displayed                                 |
+| 11. Confirm the deletion                                                              | The indicator is deleted                                         |
+| 12. Validate the KPI record got deleted in the KPI list                               | The indicator is not listed in the KPI list                      |
 
 ### Scenario 6: Validate Admin Function
 
@@ -141,17 +141,20 @@ principles and implement a browser factory.
 
 ### Scenario 10: Assign Leave
 
-| Steps                                                     | Expected Result                                            |
-|-----------------------------------------------------------|------------------------------------------------------------|
-| 1. Launch the application                                 | The login page opens                                       |
-| 2. Enter valid username                                   | Username is in the username field                          |
-| 3. Enter valid password                                   | Password is in the password field                          |
-| 4. Click on login button                                  | User gets logged in and gets redirected to their dashboard |
-| 5. Click on 'Leave' on the main menu                      | Leave options are displayed                                |
-| 6. Click on 'More' on the Leave menu                      |                                                            |
-| 7. Click on 'Assign Leave' from dropdown menu             | 'Assign Leave' page is displayed                           |
-| 8. Enter employee name, types of leave, date and comments | Corresponding fields are filled                            |
-| 9. Click 'Assign' button                                  | Leave gets assigned for the specified employee             |
+#### Preconditions: create employee
+
+| Steps                                                                        | Expected Result                                                |
+|------------------------------------------------------------------------------|----------------------------------------------------------------|
+| 1. Launch the application                                                    | The login page opens                                           |
+| 2. Enter valid username                                                      | Username is in the username field                              |
+| 3. Enter valid password                                                      | Password is in the password field                              |
+| 4. Click on login button                                                     | User gets logged in and gets redirected to their dashboard     |
+| 5. Click on 'Leave' on the main menu                                         | Leave options are displayed                                    |
+| 6. Click on 'More' on the Leave menu                                         |                                                                |
+| 7. Click on 'Assign Leave' from dropdown menu                                | 'Assign Leave' page is displayed                               |
+| 8. Enter employee name from preconditions, types of leave, date and comments | Corresponding fields are filled                                |
+| 9. Click 'Assign' button                                                     | Confirmation popup with title 'Confirm Leave Assignment' opens |
+| 10. Click Ok                                                                 | Leave gets assigned for the specified employee                 |
 
 ### Scenario 11: Add Job Title
 
@@ -168,17 +171,21 @@ principles and implement a browser factory.
 
 ### Scenario 12: Search Employee
 
-| Step                                          | Expected Result                                            |
-|-----------------------------------------------|------------------------------------------------------------|
-| 1. Launch the application                     | The login page opens                                       |
-| 2. Enter valid username                       | Username is in the username field                          |
-| 3. Enter valid password                       | Password is in the password field                          |
-| 4. Click on login button                      | User gets logged in and gets redirected to their dashboard |
-| 5. Click on 'PIM' on the menu                 | PIM options are displayed                                  |
-| 6. Click on 'Employee List'                   | Employee list is visible                                   |
-| 7. Enter a search parameter in the search bar | Parameter is entered                                       |
-| 8. Click on 'Search'                          | Search results are displayed                               |
-| 9. Log out from the user profile dropdown     | User is logged out                                         | 
+#### Preconditions: create employee
+
+| Step                                                          | Expected Result                                            |
+|---------------------------------------------------------------|------------------------------------------------------------|
+| 1. Launch the application                                     | The login page opens                                       |
+| 2. Enter valid username                                       | Username is in the username field                          |
+| 3. Enter valid password                                       | Password is in the password field                          |
+| 4. Click on login button                                      | User gets logged in and gets redirected to their dashboard |
+| 5. Click on 'PIM' on the menu                                 | PIM options are displayed                                  |
+| 6. Click on 'Employee List'                                   | Employee list is visible                                   |
+| 7. Enter a search parameter as an employee from preconditions | Parameter is entered                                       |
+| 8. Click on 'Search'                                          | Search results are displayed                               |
+| 8. Enter a search parameter as '1234567'                      |                                                            |
+| 8. Click on 'Search'                                          | 'Results not found' appears                                |
+| 9. Log out from the user profile dropdown                     | User is logged out                                         | 
 
 ### Scenario 13: Edit Employee Details
 
@@ -216,17 +223,19 @@ principles and implement a browser factory.
 
 ### Scenario 15: Search Admin
 
-| Step                                                         | Expected Result                                            |
-|--------------------------------------------------------------|------------------------------------------------------------|
-| 1. Launch the application                                    | The login page opens                                       |
-| 2. Enter valid username                                      | Username is in the username field                          |
-| 3. Enter valid password                                      | Password is in the password field                          |
-| 4. Click on login button                                     | User gets logged in and gets redirected to their dashboard |
-| 5. Navigate to the 'Admin => User Management => Users' panel | Users list is visible                                      |
-| 6. Enter a search parameter in the search bar                | Parameter is entered                                       |
-| 7. Click on 'Search'                                         | Search results are displayed                               | 
-| 8. Click on an employee from the results list                | Employee's personal details are displayed                  |
-| 9. Log out from the user profile dropdown                    | User is logged out                                         |
+#### Preconditions: Create user in Admin -> User Management
+
+| Step                                                                                    | Expected Result                                            |
+|-----------------------------------------------------------------------------------------|------------------------------------------------------------|
+| 1. Launch the application                                                               | The login page opens                                       |
+| 2. Enter valid username                                                                 | Username is in the username field                          |
+| 3. Enter valid password                                                                 | Password is in the password field                          |
+| 4. Click on login button                                                                | User gets logged in and gets redirected to their dashboard |
+| 5. Navigate to the 'Admin => User Management => Users' panel                            | Users list is visible                                      |
+| 6. Enter a search parameter in the search field Username -> username from preconditions | Parameter is entered                                       |
+| 7. Click on 'Search'                                                                    | Search results are displayed                               | 
+| 8. Click on an employee from the results list                                           | Employee's personal details are displayed                  |
+| 9. Log out from the user profile dropdown                                               | User is logged out                                         |
 
 ### Scenario 16: Validate Candidate Management in Recruitment Functionality
 
@@ -241,18 +250,20 @@ principles and implement a browser factory.
 | 7. Fill out the form with candidate details and click 'Save'     | The form is submitted and the new candidate is added     |
 | 8. Validate the new candidate is listed in the 'Candidates' list | The new candidate is visible in the list                 |
 | 9. Choose the newly added candidate, click on the checkbox       | The checkbox next to the candidate's details is selected |
-| 10. Click on 'Delete' button                                     | Confirmation pop-up is displayed                         |
+| 10. Click on 'Delete Selected'                                   | Confirmation pop-up is displayed                         |
 | 11. Confirm the deletion                                         | The selected candidate is deleted                        |
 | 12. Validate the candidate is removed from the 'Candidates' list | The candidate's details are removed from the list        |
 
 ### Scenario 17: Reset Password
 
+#### Preconditions: Create user in Admin -> User Management
+
 | Step                                 | Expected Result                                      |
 |--------------------------------------|------------------------------------------------------|
 | 1. Launch the application            | The login page opens                                 |
 | 2. Click "Forgot your password" link | Redirect to password reset page                      |
-| 3. Enter registered email            | Email is entered                                     |
-| 4. Click on submit button            | Confirmation message for password reset is displayed |
+| 3. Enter username from preconditions | Username is entered                                  |
+| 4. Click on Reset Password button    | Confirmation message for password reset is displayed |
 
 ### Scenario 18: Validate Job Titles Management Functionality
 
@@ -282,10 +293,11 @@ principles and implement a browser factory.
 | 5. Navigate to 'PIM > Configuration > Custom Fields'                | Custom Fields page gets displayed                          |
 | 6. Click on 'Add' button                                            | 'Add Custom Field' form gets displayed                     |
 | 7. Fill in the form and click 'Save' button                         | Custom field is saved                                      |
-| 8. Go to the employee profile page and click on 'Edit' button       | Employee edit options get opened                           |
-| 9. Check if the custom field appears in the respective section      | Custom field is available in the respective section        |
-| 10. Enter information into the custom field and click 'Save' button | Custom field information gets saved                        |
-| 11. Validate custom field in the employee profile                   | Custom field information appears in the employee profile   |
+| 8. Navigate to 'PIM > Employee List' page                           | Employee List page gets displayed                          |
+| 9. Select any employee and click on 'Edit' button                   | Employee edit options get opened                           |
+| 10. Check if the custom field appears in the respective section     | Custom field is available in the respective section        |
+| 11. Enter information into the custom field and click 'Save' button | Custom field information gets saved                        |
+| 12. Validate custom field in the employee profile                   | Custom field information appears in the employee profile   |
 
 ### Scenario 20: Validate Assign Skill to Employee Profile
 
