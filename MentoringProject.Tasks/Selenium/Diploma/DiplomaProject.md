@@ -189,20 +189,19 @@ principles and implement a browser factory.
 
 ### Scenario 13: Edit Employee Details
 
-| Step                                                        | Expected Result                                            |
-|-------------------------------------------------------------|------------------------------------------------------------|
-| 1. Launch the application                                   | The login page opens                                       |
-| 2. Enter valid username                                     | Username is in the username field                          |
-| 3. Enter valid password                                     | Password is in the password field                          |
-| 4. Click on login button                                    | User gets logged in and gets redirected to their dashboard |
-| 5. Click on 'PIM' on the menu                               | PIM options are displayed                                  |
-| 6. Click on 'Employee List'                                 | Employee list is visible                                   |
-| 7. Enter a search parameter in the search bar               | Parameter is entered                                       |
-| 8. Click on 'Search'                                        | Search results are displayed                               |
-| 9. Click on an employee from the results list               | Employee's personal details are displayed                  |
-| 10. Click on 'Edit' button and change the necessary details | Details are updated                                        |
-| 11. Click on 'Save'                                         | Changes are saved and displayed                            |
-| 12. Log out from the user profile dropdown                  | User is logged out                                         |
+| Step                                          | Expected Result                                            |
+|-----------------------------------------------|------------------------------------------------------------|
+| 1. Launch the application                     | The login page opens                                       |
+| 2. Enter valid username                       | Username is in the username field                          |
+| 3. Enter valid password                       | Password is in the password field                          |
+| 4. Click on login button                      | User gets logged in and gets redirected to their dashboard |
+| 5. Click on 'PIM' on the menu                 | PIM options are displayed                                  |
+| 6. Click on 'Employee List'                   | Employee list is visible                                   |
+| 7. Enter a search parameter in the search bar | Parameter is entered                                       |
+| 8. Click on 'Search'                          | Search results are displayed                               |
+| 9. Click on an employee from the results list | Employee's personal details are displayed                  |
+| 10. Click on 'Save'                           | Changes are saved and displayed                            |
+| 11. Log out from the user profile dropdown    | User is logged out                                         |
 
 ### Scenario 14: Delete Employee
 
