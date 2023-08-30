@@ -141,7 +141,9 @@ principles and implement a browser factory.
 
 ### Scenario 10: Assign Leave
 
-#### Preconditions: create employee
+#### Preconditions: 
+1. Create employee
+2. Leave > Entitlements > Add Entitlement > Add 'CAN - Vacation' days to the created employee
 
 | Steps                                                                        | Expected Result                                                |
 |------------------------------------------------------------------------------|----------------------------------------------------------------|
@@ -296,7 +298,6 @@ principles and implement a browser factory.
 | 9. Select any employee and click on 'Edit' button                   | Employee edit options get opened                           |
 | 10. Check if the custom field appears in the respective section     | Custom field is available in the respective section        |
 | 11. Enter information into the custom field and click 'Save' button | Custom field information gets saved                        |
-| 12. Validate custom field in the employee profile                   | Custom field information appears in the employee profile   |
 
 ### Scenario 20: Validate Assign Skill to Employee Profile
 
