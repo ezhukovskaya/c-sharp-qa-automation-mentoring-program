@@ -175,6 +175,88 @@ If you are using executables, your code will be like:
 var driver = new ChromeDriver("path/to/chromedriver.exe");
 ```
 
+#### Locating Elements
+
+To locate an element in Selenium you can use `driver.FindElement()` or `driver.FindElements()`
+
+`driver.FindElement(By locator)`: This method finds a single (the first from the sequence) web element based on the 
+specified locator  (e.g., By.Id, By.Name, By.XPath).
+```csharp
+IWebElement element = driver.FindElement(By.Id("elementId"));
+```
+`driver.FindElements(By locator)`: This method finds a collection of web elements based on the
+specified locator  (e.g., By.Id, By.Name, By.XPath).
+```csharp
+var elements = driver.FindElements(By.Id("elementId"));
+```
+
+The By class in Selenium WebDriver is used for locating elements in a web page. The By class supports various strategies
+for locating elements, these include:
+
+##### By.Id(string id): The By.Id method locates the first HTML element with a specific ID.
+
+```csharp
+IWebElement elementById = driver.FindElement(By.Id("vss_3"));
+```
+![Id](./Resources/byid.png)
+
+##### By.Name(string name): The By.Name method locates an HTML element with a specific name attribute.
+
+```csharp
+IWebElement elementByName = driver.FindElement(By.Name("Bold"));
+```
+![Name](./Resources/byname.png)
+
+##### By.ClassName(string className): The By.ClassName method locates the first HTML element with a specific class name.
+```csharp
+IWebElement elementByClassName = driver.FindElement(By.ClassName("section-container"));
+```
+![ClassName](./Resources/byclassname.png)
+
+##### By.TagName(string tagName): The By.TagName method locates the first HTML element with a specific tag name.
+```csharp
+IWebElement elementByTagName = driver.FindElement(By.TagName("button"));
+```
+![Tag](./Resources/bytag.png)
+
+##### By.LinkText(string linkText): The By.LinkText method locates a hyperlink (`<a>`) element by its exact match text.
+
+```csharp
+IWebElement elementByLinkText = driver.FindElement(By.LinkText("https://www.orangehrm.com/"));
+```
+![Link](./Resources/bylink.png)
+
+##### By.PartialLinkText(string partialLinkText): The By.PartialLinkText method locates a hyperlink (`<a>`) element by partially matching the hyperlink text.
+
+```csharp
+IWebElement elementByPartialLinkText = driver.FindElement(By.PartialLinkText("index.php"));
+```
+![PartialLink](./Resources/bypartiallink.png)
+
+##### By.CssSelector(string cssSelector): The By.CssSelector method locates the first HTML element that matches a specific CSS selector.
+```csharp
+IWebElement elementByCssSelector = driver.FindElement(By.CssSelector("[class*='--fixed']"));
+```
+![CSS](./Resources/bycss.png)
+
+##### By.XPath(string xPathExpression): The By.XPath method locates the first HTML element that matches a specific XPath query.
+
+```csharp
+IWebElement elementByXpath = driver.FindElement(By.XPath("//div[.//text() = 'Username'][contains(@class, 'oxd-grid-item')]//input"));
+```
+![Xpath](./Resources/byxpath.png)
+
+
+###### Locator Strategies Performance
+
+The performance of different locator strategies from fastest to slowest is:
+
+1. **ID / Name:** The most recommended types of locator if these attributes are available due to their high efficiency.
+2. **Class name / Tag name:** Quick but can return multiple results, requiring the need to filter out the exact element.
+3. **CSS Selector:** Powerful and accurate but can slow down if the selector is highly complex.
+4. **XPath:** Can traverse the entire HTML document and perform complex queries, which can make it slower than other
+   methods. However, it can navigate child, ancestor, sibling, preceding and following nodes, which other locators can't do.
+
 #### Interacting with Web Elements
 
 In Selenium WebDriver, IWebElement is an important interface for representing an HTML element in your web pages. 
@@ -182,12 +264,6 @@ Any HTML element is considered as a IWebElement in WebDriver.
 
 To interact with web elements, such as buttons, forms, or links, you can use the following basic methods provided by 
 Selenium WebDriver:
-
-- `driver.FindElement(By locator)`: This method finds a single web element based on the specified locator 
-(e.g., By.Id, By.Name, By.XPath).
-```csharp
-IWebElement element = driver.FindElement(By.Id("elementId"));
-```
 
 - `element.Click()`: This method simulates a mouse click on the element.
 ```csharp
