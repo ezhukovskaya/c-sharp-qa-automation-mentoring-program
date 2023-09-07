@@ -33,32 +33,34 @@ WebSite: https://phptravels.net
 | 3. Press `Enter` key to see the 'My Account' dropdown options.                   | Dropdown options - 'Sign up', 'Login' display. |
 | 4. With dropdown opened, use `Tab` to highlight 'Login' and press `Enter`.       | User is redirected to the Login page.          |
 
-### Scenario 3: Open a Blog Post through Keyboard Navigation
+### Scenario 3: Change Currency with Keyboard Navigation
 
-| Step                                                                  | Expected Result                                            |
-|-----------------------------------------------------------------------|------------------------------------------------------------|
-| 1. Launch https://phptravels.net                                      | PHP Travels homepage should display                        |
-| 2. Use `Tab` key to navigate to "Blog" menu and `Enter` to select it. | "Blog" page opens.                                         |
-| 3. Use `Tab` key repeatedly to scroll through the blog posts.         | Each blog post gets highlighted as keyboard focus changes. |
-| 4. Press `Enter` key at any blog post.                                | Focused blog post page is opened.                          |
+| Step                                                                    | Expected Result                                    |
+|-------------------------------------------------------------------------|----------------------------------------------------|
+| 1. Launch https://phptravels.net                                        | PHP Travels homepage should display                |
+| 2. Use `Tab` key to navigate to the Currency dropdown menu.             | The Currency dropdown is highlighted               |
+| 3. Press `Enter` key to see the Currency dropdown options.              | Dropdown options for different currencies display. |
+| 4. Use the Arrow Keys to navigate through the currency choices.         | Individual currency choices get highlighted.       |
+| 5. Press `Enter` key to select a highlighted currency.                  | The page updates to the selected currency.         |
 
-### Scenario 4: Navigate the Footer Links
+### Scenario 4: Navigating Backwards Through Hotels List Using Keyboard Shortcuts
 
-| Step                                                                | Expected Result                                          |
-|---------------------------------------------------------------------|----------------------------------------------------------|
-| 1. Launch https://phptravels.net                                    | PHP Travels homepage should display.                     |
-| 2. Use `Tab` key repeatedly till you reach one of the footer links. | Footer link is focused.                                  |
-| 3. Use the Arrow Keys to navigate through the footer links.         | Individual footer links can be highlighted.              |
-| 4. Press `Enter` key to navigate to the highlighted link's page.    | The webpage associated with the footer link should open. |
+| Step                                                                   | Expected Result                                                         |
+|------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| 1. Launch https://phptravels.net                                       | PHP Travels homepage should display                                     |
+| 2. Use `Tab` key to navigate to "Hotels" menu and `Enter` to select it | "Hotels" page opens                                                     |
+| 3. Use `Tab` key several times to move focus on the third hotel        | Each hotel entry gets highlighted as keyboard focus changes forward     |
+| 4. Hold `Shift` key and press `Tab` to move focus to the first hotel   | Each hotel entry gets highlighted as keyboard focus changes backward    |
+| 5. Press `Enter` key at highlighted hotel                              | The detailed page of the selected hotel should open                     |
 
 ### Scenario 5: Selecting a City from AutoComplete
 
-| Step                                                                                                    | Expected Result                             |
-|---------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| 1. Launch https://phptravels.net                                                                        | PHP Travels homepage should display         |
-| 2. Use `Tab` key to navigate to the search field.                                                       | The search field is focused.                |
-| 3. Type 'New Yo' and wait for the auto-complete suggestions.                                            | Suggestions should display.                 |
-| 4. Use `Down Arrow` key to navigate through auto-complete suggestions and `Enter` to select 'New York'. | 'New York' is selected in the search field. |
+| Step                                                                                                                                       | Expected Result                                   |
+|--------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
+| 1. Launch https://phptravels.net                                                                                                           | PHP Travels homepage should display               |
+| 2. Use `Tab` key to navigate to the search field.                                                                                          | The search field is focused.                      |
+| 3. Type 'New Yo' and wait for the auto-complete suggestions.                                                                               | Suggestions should display.                       |
+| 4. Use `Down Arrow` key to navigate through auto-complete suggestions and `Enter` to select 'New York All Airports' from the autocomplete. | 'New York NYC' is selected in the dropdown field. |
 
 
 ## After all check list
