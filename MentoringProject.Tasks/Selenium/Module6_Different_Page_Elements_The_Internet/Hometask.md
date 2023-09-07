@@ -16,7 +16,7 @@ NUnit. Your goal is to create automated test scenarios to ensure that different 
 expected. You should avoid using Thread.Sleep for waits and instead use explicit waits, such as WebDriverWait,
 to ensure reliable and stable test execution.
 
-Test website: http://the-internet.herokuapp.com/
+Test website: https://www.the-internet.herokuapp.com
 
 ### Test Scenario 1: Handling Simple Alert
 
@@ -87,12 +87,12 @@ Test website: http://the-internet.herokuapp.com/
 
 ### Test Scenario 8: Interacting with Text Input Element
 
-| Step                                 | Expected Result                      |
-|--------------------------------------|--------------------------------------|
-| Open the website                     | Website is loaded successfully       |
-| Click "Inputs" link                  | "Inputs" page is shown               |
-| Enter text in the text input         | Text input displays the entered text |
-| Verify entered text                  | Entered text matches displayed text  |
+| Step                            | Expected Result                      |
+|---------------------------------|--------------------------------------|
+| Open the website                | Website is loaded successfully       |
+| Click "Inputs" link             | "Inputs" page is shown               |
+| Enter numbers in the text input | Text input displays the entered text |
+| Verify entered text             | Entered text matches displayed text  |
 
 ### Test Scenario 9: Interacting with Basic Auth
 
