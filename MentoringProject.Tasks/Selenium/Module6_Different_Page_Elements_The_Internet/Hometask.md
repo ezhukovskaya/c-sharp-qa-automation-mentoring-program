@@ -1,4 +1,4 @@
-﻿# Different Page Elements
+# Different Page Elements
 
 ## Materials
 
@@ -147,7 +147,7 @@ Test website: https://www.the-internet.herokuapp.com
 |----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | Click 'Sortable Data Tables' link from the homepage            | 'Sortable Data Tables' page is displayed                                                                                                         |
 | Click on the header of the 'Due' column                        | The data in the 'Due' column gets sorted                                                                                                         |
-| Verify that the data are sorted correctly                      | The data in the 'Due' column is sorted in ascending order objects may not be sorted in regular number or alphabetic order as they represent date |
+| Verify that the data are sorted correctly                      | The data in the 'Due' column is sorted in ascending |
 
 
 ## After all check list
