@@ -212,6 +212,17 @@ In the above example, whenever a WebDriver is requested, the Driver property ret
 the current thread's id or class name. If no such WebDriver exists, it creates a new one. This ensures that each thread gets its 
 own WebDriver and can operate independently of other threads.
 
+#### Advantages
+
+1. Flexibility: `ConcurrentDictionary` is more flexible than `ThreadStatic` because it does not confine you to just working 
+with threads. It can be used with Task or any other type of object as a key.
+2. Explicit lifecycle control: It allows you to manage the lifecycle of WebDriver instances explicitly. You can start, 
+stop, maintain, and clean up each WebDriver instance by just removing the key-value pair from the dictionary.
+
+#### Disadvantages
+1. Performance: `ConcurrentDictionary` has a bit of overhead because it needs to maintain a dictionary and deal with hashing and equality.
+2. Complexity: The `ConcurrentDictionary` requires more complex code than using `ThreadStatic`.
+
 In both examples, the goal is to allow each thread to have its own instance of WebDriver, allowing tests to run 
 concurrently without interfering with each other. They provide thread safety in multithreading execution environments 
 such as parallel test execution.
