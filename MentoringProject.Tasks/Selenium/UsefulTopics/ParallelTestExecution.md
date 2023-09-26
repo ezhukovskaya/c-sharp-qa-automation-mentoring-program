@@ -6,12 +6,10 @@ Parallel Test Execution is a process of distributing the execution of tests on d
 time. It's a great way to improve the overall test execution speed, especially when the test suite grows large. Selenium
 4 introduced new features for this process, making it easier in C#.
 
-<div style="background-color: rgba(215,198,97,0.58); padding: 10px;">
-    <strong>Warning</strong>
-    When tests are run in parallel, you are responsible for the thread safety of your tests. Tests that run at the same
-time and modify instance fields or properties without locks will cause unexpected behavior as they would in any 
+>  WARNING:
+> When tests are run in parallel, you are responsible for the thread safety of your tests. Tests that run at the same
+time and modify instance fields or properties without locks will cause unexpected behavior as they would in any
 multi-threaded program.
-</div>
 
 ## Useful Links
 
