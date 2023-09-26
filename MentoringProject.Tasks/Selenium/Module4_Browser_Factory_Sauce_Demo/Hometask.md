@@ -26,7 +26,7 @@ other tests. By default, no parallel execution takes place.
 Your task is automate the test cases below and implement **Browser Factory pattern**
 1. Refactor the code from the [Homework BaseTest](../Module3_BaseTest_Sauce_Demo/Hometask.md) using Browser Factory pattern
 2. You must add possibility to launch tests using Chrome and Firefox
-3. Set up your tests so they can run in parallel
+3. Set up your tests so they can run in parallel - You can get info about it in [ParallelTestExecution](../UsefulTopics/ParallelTestExecution.md)
 
 ### After all check list
 
