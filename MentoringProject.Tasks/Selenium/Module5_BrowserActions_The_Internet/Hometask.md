@@ -24,13 +24,16 @@ Test website: http://the-internet.herokuapp.com/
 5. Verify that the new window content is displayed. 
 6. Close the new window.
 
-### Scenario 2: Log Out from Form Authentication
+### Scenario 2: Navigate Back and Forward
 
 1. Navigate to http://the-internet.herokuapp.com/.
 2. Click on the "Form Authentication" link.
 3. Log in with valid credentials.
-4. Click on the "Logout" button.
-5. Verify that the user is logged out and the login form is visible again.
+4. Verify that successfully logged in page displayed
+5. Click browser back button 
+6. Verify that the login form is visible again 
+7. Click browser forward button 
+8. Verify that successfully logged in page displayed
 
 ### Scenario 3: Navigate to URL and Refresh
 
@@ -48,7 +51,7 @@ Test website: http://the-internet.herokuapp.com/
 
 1. Navigate to the website. 
 2. Click on the "Large & Deep DOM" link. 
-3. Scroll down until 'Powered by Elemental Selenium' is not clickable. 
+3. Scroll down until 'Powered by Elemental Selenium' is clickable. 
 4. Maximize the browser window. 
 5. Scroll right to the end of the table.
 6. Get the latest value of the table (must be equal 50.50)
