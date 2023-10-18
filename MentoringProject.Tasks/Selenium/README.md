@@ -11,9 +11,9 @@ Welcome to the comprehensive C# Selenium Course. This course has been designed t
 5. [**Browser Actions:**](./Module5_BrowserActions_The_Internet) Master various browser actions that can be automated using Selenium.
 6. [**Different Page Elements:**](./Module6_Different_Page_Elements_The_Internet) Understand different page elements and how to interact with them using Selenium.
 7. [**Page Object Model:**](./Module7_POM_The_Internet) Learn about the Page Object Model and its uses in creating organized test structures.
-8. [**Waits:**](./Module8_Waiters_PHP_Travels) Deep-dive into concept of waits in Selenium and how to implement them.
-9. [**Selenium Action and Javascript:**](./Module9_Actions_And_Javasript_PHP_Travels) Explore how to perform actions in Selenium and using Javascript in automation tests.
-9. [**Wrappers:**](./Module10_Wrappers_PHP_Travels) Explore how to create wrappers for different web elements
+8. [**Waits:**](./Module8_Waiters_Booking) Deep-dive into concept of waits in Selenium and how to implement them.
+9. [**Selenium Action and Javascript:**](./Module9_Actions_And_Javasript_Booking) Explore how to perform actions in Selenium and using Javascript in automation tests.
+10. [**Wrappers:**](./Module10_Wrappers_Booking) Explore how to create wrappers for different web elements
 
 ### Project work
 
@@ -21,7 +21,7 @@ For each topic, you will need to create a corresponding subproject using one (or
 
 - [Sauce Demo](https://www.saucedemo.com/)
 - [The Internet](http://the-internet.herokuapp.com/)
-- [PHP Travels](https://phptravels.net/)
+- [Booking](https://booking.com/)
 
 Please note, every task folder are named as `Module{number of module}_{name of module}_{website for autotests}`
 
