@@ -11,12 +11,12 @@
 
 ## Home Task
 
-You are tasked with testing various functionalities of the website "https://www.the-internet.herokuapp.com" using C# Selenium with
+You are tasked with testing various functionalities of the website "https://the-internet.herokuapp.com" using C# Selenium with
 NUnit. Your goal is to create automated test scenarios to ensure that different features of the website are working as
 expected. You should avoid using Thread.Sleep for waits and instead use explicit waits, such as WebDriverWait,
 to ensure reliable and stable test execution.
 
-Test website: https://www.the-internet.herokuapp.com
+Test website: https://the-internet.herokuapp.com/
 
 ### Test Scenario 1: Handling Simple Alert
 
