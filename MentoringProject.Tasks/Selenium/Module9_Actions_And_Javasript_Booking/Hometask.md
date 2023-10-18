@@ -6,7 +6,7 @@
 
 ## Pre-Conditions
 
-Task from [Home Task 8](../Module8_Waiters_PHP_Booking/Hometask.md) must be done, approved and merged
+Task from [Home Task 8](../Module8_Waiters_Booking/Hometask.md) must be done, approved and merged
 
 ## Home Task
 
