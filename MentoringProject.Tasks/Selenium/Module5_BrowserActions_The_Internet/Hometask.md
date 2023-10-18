@@ -24,15 +24,13 @@ Test website: http://the-internet.herokuapp.com/
 5. Verify that the new window content is displayed. 
 6. Close the new window.
 
-### Scenario 2: Navigate Back and Forward
+### Scenario 2: Log Out from Form Authentication
 
-1. Navigate to the website. 
-2. Click on the "Form Authentication" link. 
-3. Log in with valid credentials. 
-4. Click the "Click here" link to go back to the homepage. 
-5. Return to the login page. 
-6. Go back to the homepage. 
-7. Verify that the user is back on the homepage.
+1. Navigate to http://the-internet.herokuapp.com/.
+2. Click on the "Form Authentication" link.
+3. Log in with valid credentials.
+4. Click on the "Logout" button.
+5. Verify that the user is logged out and the login form is visible again.
 
 ### Scenario 3: Navigate to URL and Refresh
 
@@ -50,11 +48,12 @@ Test website: http://the-internet.herokuapp.com/
 
 1. Navigate to the website. 
 2. Click on the "Large & Deep DOM" link. 
-3. Scroll down to interact with the deep DOM elements. 
+3. Scroll down until 'Powered by Elemental Selenium' is not clickable. 
 4. Maximize the browser window. 
-5. Verify that the deep DOM interaction is still working. 
-6. Change the window size. 
-7. Verify that the window size changes accordingly.
+5. Scroll right to the end of the table.
+6. Get the latest value of the table (must be equal 50.50)
+7. Change the window size. 
+8. Verify that the window size changes accordingly.
 
 ### Scenario 5: Working with Chrome Options - Headless Mode
 
