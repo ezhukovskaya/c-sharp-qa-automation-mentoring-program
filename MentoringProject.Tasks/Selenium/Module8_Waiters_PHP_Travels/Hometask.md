@@ -7,124 +7,123 @@ Practicing using Explicit/Implicit/Fluent waits
 ## Materials
 
 1. Official Selenium Website:
-   - [SeleniumHQ](https://www.selenium.dev/): The official website of Selenium provides documentation, downloads, and other essential resources.
+   - [SeleniumHQ](https://www.selenium.dev/)
 2. Selenium Documentation:
-   - [Selenium Documentation](https://www.selenium.dev/documentation/en/): The official documentation covers all aspects of Selenium, including guides, APIs, and best practices.
+   - [Selenium Documentation](https://www.selenium.dev/documentation/en/)
 3. NUnit Framework:
-   - [NUnit Official Website](https://nunit.org/): NUnit is a popular testing framework for C# projects and is ideal for Selenium test automation.
+   - [NUnit Official Website](https://nunit.org/)
 4. Waiting Strategies:
-   - [Waiting Strategies](https://www.selenium.dev/documentation/webdriver/waits/): Official documentation on using the Page Object Pattern with Selenium WebDriver in different programming languages, including C#.
+   - [Waiting Strategies](https://www.selenium.dev/documentation/webdriver/waits/)
 
 ## Home Task
 
-You are tasked with testing various functionalities of the website "https://phptravels.net" using C# Selenium with
-NUnit. Your goal is to create automated test scenarios to ensure that different features of the website are working as
-expected. You should avoid using Thread.Sleep for waits and instead use explicit waits, such as WebDriverWait,
-to ensure reliable and stable test execution.
+Your task is to test various functionalities of the website "https://booking.com" using C# Selenium with NUnit. Your goal is to create automated test scenarios to ensure different features of the website are working as expected. You should avoid using Thread.Sleep for waits and instead, use explicit waits such as WebDriverWait, to ensure reliable and stable test execution.
 
-Test website: https://phptravels.net
+Test website: https://booking.com
 
 ### Scenario 1: Search Hotels
 
-| Step                                                                                          | Expected Result                                               |
-|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| Navigate to https://phptravels.net                                                            | The PHP Travels homepage should be displayed                  |
-| Click on the "Hotels" menu item                                                               | The "Hotels" page should be displayed                         |
-| Enter a location in the search box and select a location from the dropdown auto-complete list | The selected location should be filled in the search box      |
-| Choose Check-in and Check-out dates from the date picker                                      | The selected dates should be reflected in the date input box  |
-| Click on the "Search" button                                                                  | A list of hotels in the selected location should be displayed |
+| Step                                                                                          | Expected Result                                |
+|-----------------------------------------------------------------------------------------------|------------------------------------------------|
+| Navigate to https://booking.com                                                               | The Booking.com homepage should be displayed   |
+| Enter a destination in the search box                                                         | The selected destination should be filled in   |
+| Choose Check-in and Check-out dates from the date picker                                      | The selected dates should be displayed         |
+| Click on the "Search" button                                                                  | A list of hotels should be displayed           |
 
-### Scenario 2: Book a Flight
+### Scenario 2: Searching for Attractions in a Specific City
 
-| Step                                                                                                                      | Expected Result                                                                                      |
-|---------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| Navigate to https://phptravels.net                                                                                        | The PHP Travels homepage is displayed                                                                |
-| Click on the "Flights" menu item                                                                                          | The "Flights" page is displayed                                                                      |
-| Enter the departure and destination locations in the search box and select locations from the dropdown auto-complete list | The selected locations are filled in the search box                                                  |
-| Choose departure and return dates from the date picker                                                                    | The selected dates are reflected in the date input box                                               |
-| Click on the "Search" button                                                                                              | A list of available flights between the selected locations on the selected dates should be displayed |
+| Step                                                                                                                            | Expected Result                                                                         |
+|---------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| Navigate to https://booking.com                                                                                                 | The Booking.com homepage is displayed                                                   |
+| Click on the "Attractions" menu item                                                                                            | The "Attractions" search page is displayed                                              |
+| Enter a specific city in the search box                                                                                         | The selected city should be auto-filled in the search box                               |
+| Select the desired dates for visiting the attraction                                                                            | The selected dates should be filled in                                                  |
+| Click on the "Search" button                                                                                                    | A list of attractions in the specific city available on the selected dates is displayed |
+| Click on an attraction from the list                                                                                            | The details page for the selected attraction is displayed                               |
+| Check the availability and times for the selected attraction                                                                    | Available times and dates for the selected attraction are displayed                     |
 
-### Scenario 3: Car Booking
+### Scenario 3: Negative Checks for Car Rentals
 
-| Step                                                                                                    | Expected Result                                                       |
-|---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| Navigate to https://phptravels.net                                                                      | The PHP Travels homepage should be displayed                          |
-| Click on the "Cars" menu item                                                                           | The "Cars" page should be displayed                                   |
-| Enter the pick up location in the search box and select a location from the dropdown auto-complete list | The selected location should be filled in the search box              |
-| Choose date from the date picker                                                                        | The selected date should be reflected in the date input box           |
-| Click on the "Search" button                                                                            | A list of available cars in the selected location should be displayed |
+| Step                                                                                                       | Expected Result                                                   |
+|------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
+| Navigate to https://booking.com                                                                            | The Booking.com homepage is displayed                             |
+| Click on the "Car rentals" menu item                                                                       | The "Car rentals" page is displayed                               |
+| Leave the 'Pick-up Location' field empty and click the "Search" button                                     | An error message is shown, advising to enter the pick-up location |
+| Input invalid data (non-existent location) into the 'Pick-up Location' field and click the "Search" button | An error message is shown, advising to enter the pick-up location |
+| Select a valid pick-up date but select a return date earlier than the pick-up date                         | Pick-up date = Drop-off date - 1 day                              |
 
-### Scenario 4: Tour Booking
+### Scenario 4: Multi-City Flight Search
 
-| Step                                                                                                          | Expected Result                                                         |
-|---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| Navigate to https://phptravels.net                                                                            | The PHP Travels homepage should be displayed                            |
-| Click on the "Tours" menu item                                                                                | The "Tours" page should be displayed                                    |
-| Enter a location in the search box and select a location from the dropdown auto-complete list                 | The selected location should be filled in the search box                |
-| Choose Check-in date from the date picker                                                                     | The selected date should be reflected in the date input box             |
-| Select number of adults and children from the dropdown                                                        | The selected number should be reflected in the respective input box     |
-| Click on the "Search" button                                                                                  | A list of available tours in the selected location should be displayed  |
+| Step                                                                        | Expected Result                                                              |
+|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|
+| Navigate to https://booking.com                                             | The Booking.com homepage is displayed                                        |
+| Click on the "Flights" menu item                                            | The "Flights" page is displayed                                              |
+| Select "Multi-city" mode                                                    | The search forms for multiple destinations appear (must be 3 legs)           |
+| Enter the departure and arrival destinations for all legs of the journey    | The selected destinations are filled in                                      |
+| Select the flight departure date for the all legs of the journey            | The selected dates should be displayed                                       |
+| Click on the 'Add' button to add another leg to the journey                 | An additional form for the next leg of the journey appears                   |
+| Enter the departure and arrival destinations for the 4th leg of the journey | The selected destinations are filled in                                      |
+| Select the flight departure date for the 4th leg                            | The selected date should be displayed                                        |
+| Click 'Remove' button                                                       | Recently added leg of the journey is not displayed                           |
+| Click on the "Search" button                                                | A list of available flights should be displayed for all legs of the journey  |
 
-### Scenario 5: Language Selection and Validation
+### Scenario 5: Searching for Hotels in a specific City with Filters
 
-| Step                                                                                                                                                  | Expected Result                                                     |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| Navigate to https://phptravels.net                                                                                                                    | The PHP Travels homepage should be displayed                        |
-| From the top right corner, click on the language dropdown and select a different language                                                             | The website content should change to the selected language          |
-| Verify the translation of some key words or phrases on the page (like "Hotels", "Flights", "Tours", etc.)                                             | The translated words or phrases should match the selected language  |
+| Step                                                            | Expected Result                                                                            |
+|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| Navigate to https://booking.com                                 | The Booking.com homepage is displayed                                                      |
+| Enter a specific city in the search box                         | The selected city is auto-filled in search box                                             |
+| Click on the "Check-in" and "Check-out" date field              | The calendar for date selection should appear                                              |
+| Select the check-in and check-out dates                         | The selected dates should be filled in                                                     |
+| Select the number of adults, children, and rooms                | The selected numbers should be filled in                                                   |
+| Click on the "Search" button                                    | A list of hotels in the specific city with availability on the selected dates is displayed |
+| Apply filter for 'Property rating' and select '5 stars'         | The list updates to display only 5-star hotels                                             |
+| Select 'Price (lowest first)' from 'Sort' dropdown              | The list updates to display hotels sorted by lowest price first                            |
+| Apply filter for 'Hotel Facilities' and select 'Fitness Centre' | The list updates to display only hotels with a fitness centre                              |
 
-### Scenario 6: Checking the Social Media Links
+### Scenario 6: Search, Select, and Attempt to Book a Hotel
 
-| Step                                                                   | Expected Result                                                      |
-|------------------------------------------------------------------------|----------------------------------------------------------------------|
-| Navigate to https://phptravels.net                                     | The PHP Travels homepage should be displayed                         |
-| Scroll down to the bottom of the page                                  | The footer section should be displayed                               |
-| Click on each of the social media icons                                | The respective social media page should open up in a new browser tab |
+| Step                                                                                                                                   | Expected Result                                                                                          |
+|----------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| Navigate to https://booking.com                                                                                                        | The Booking.com homepage is displayed                                                                    |
+| Enter a city in the search box                                                                                                         | The entered city is auto-filled in search box                                                            |
+| Click on the "Check-in" and "Check-out" date field                                                                                     | The calendar for date selection should appear                                                            |
+| Select the check-in and check-out dates                                                                                                | The selected dates should be filled in                                                                   |
+| Select the number of adults, children, and rooms                                                                                       | The selected numbers should be filled in                                                                 |
+| Click on the "Search" button                                                                                                           | A list of hotels in the selected city is displayed with availability on the selected dates               |
+| Select one of the hotels from the list                                                                                                 | The page for the selected hotel is displayed                                                             |
+| On the hotel page, choose a suitable room under "Choose your room"                                                                     | The chosen room's details should be displayed                                                            |
+| Click on the "I'll reserve" or "Reserve now" button                                                                                    | A final review and personal details entry page is displayed                                              |
+| Enter personal detail placeholders. For example, `John Doe` as name, `john.doe@email.com` as email, and `555-555-5555` as phone number | The placeholders are entered as personal details                                                         |
+| Click 'Next: Final details' button                                                                                                     | Payments details page is displayed                                                                       |
+| Click 'Check your booking' button                                                                                                      | Verify that your booking data is correct and 'Book with commitment to pay' button is available for click |
 
-### Scenario 7: Navigation Test
+### Scenario 7: Verifying Language Change
 
-| Step                                                                                           | Expected Result                                                       |
-|------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| Navigate to https://phptravels.net                                                             | The PHP Travels homepage should be displayed                          |
-| Navigate using the menu bar to each of the different pages (like Flights, Hotels, Tours, etc.) | Each page is successfully displayed without any errors or load issues |
+| Step                                                                                                     | Expected Result                                  |
+|----------------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| Navigate to https://booking.com                                                                          | The Booking.com homepage should be displayed     |
+| Choose a different language from the dropdown menu                                                       | The site should reload in the selected language  |
 
-### Scenario 8: Verify Error Message for Invalid Login
+### Scenario 8: Booking an Airport Taxi
 
-| Step                                                                                                             | Expected Result                                                         |
-|------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| Navigate to https://phptravels.net                                                                               | The PHP Travels homepage should be displayed                            |
-| Click on 'My Account' and then 'Login'                                                                           | The login page should be displayed                                      |
-| Input invalid or unregistered email addresses in the 'Email' field and any password in the 'Password' field      | An error message should appear, indicating a failure in user login      |
+| Step                                                                       | Expected Result                                                                              |
+|----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| Navigate to https://booking.com                                            | The Booking.com homepage is displayed                                                        |
+| Click on the "Airport taxis" menu item                                     | The "Book your airport taxi" page is displayed                                               |
+| Enter a valid Pick-up location and destination                             | Pick-up and Destination are selected                                                         |
+| Enter a valid flight arrival date and time                                 | Date and time are selected                                                                   |
+| Click on the "Search" button                                               | The available taxis for the entered flight arrival date and journey data should be displayed |
+| Click on the most expensive taxi offer and click 'Continue' button         | The details page for the selected taxi is displayed and journey data should be displayed     |
 
-### Scenario 9: Currency Change
+### Scenario 9: Verify Invalid Login
 
-| Step                                                                                      | Expected Result                                                                     |
-|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| Navigate to https://phptravels.net                                                        | The PHP Travels homepage should be displayed                                        |
-| From the top right corner, click on the currency dropdown and select a different currency | The displayed prices on the page should change to the unit of the selected currency |
-| Check some prices before and after the change for validation                              | The prices should match with the currency conversion rate                           |
+| Step                                                                     | Expected Result                                                                                  |
+|--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| Navigate to https://booking.com                                          | The Booking.com homepage should be displayed                                                     |
+| Click on the `Sign in` button                                            | The login page should be displayed                                                               |
+| Enter invalid or unregistered email addresses in the 'Email' field       | Create password page is displayed. Verify 'Password' and 'Confirm Password' fields are displayed |
 
-### Scenario 10: Checking the Hotel Booking Process
-
-| Step                                                                                          | Expected Result                                                                                            |
-|-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| Navigate to https://phptravels.net                                                            | The PHP Travels homepage should be displayed                                                               |
-| Click on the "Hotels" menu item                                                               | The "Hotels" page should be displayed                                                                      |
-| Enter a location in the search box and select a location from the dropdown auto-complete list | The selected location should be filled in the search box                                                   |
-| Choose Check-in and Check-out dates from the date picker                                      | The selected dates should be reflected in the date input boxes                                             |
-| Select the number of rooms and adults                                                         | The selected number should be displayed in the rooms and adults input box                                  |
-| Click on the "Search" button                                                                  | A list of available hotels in the selected location should be displayed                                    |
-| Select a suitable hotel and select a room via clicking Book Now                               | Hotel Booking form is open                                                                                 |
-| Fill in Personal information and in Payments methods select Pay Later                         |                                                                                                            |
-| Check I agree to all Terms & Conditions and Confirm booking                                   | Invoice document page is open and all data corresponds to the information you entered in the previous step |
-| Click Download as PDF                                                                         | Confirm that pdf contains correct data                                                                     |
-
-## After all check list
-
-1. Make two screenshots that your test passes successfully for both browsers (Chrome, Firefox)
-2. Create Pull Request with name `Module-8-{TaskName}`
-3. Add screenshots to PR description
-4. Notify your mentor about completing the task
 
 ## Evaluation Criteria
 

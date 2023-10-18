@@ -6,62 +6,62 @@
 
 ## Pre-Conditions
 
-Task from [Home Task 7](Hometask.md) must be done, approved and merged
+Task from [Home Task 8](../Module8_Waiters_PHP_Travels/Hometask.md) must be done, approved and merged
 
 ## Home Task
 
-In this task you need to automate the provided test scenarios using Actions and JavaScript instead of regular Selenium 
+In this task you need to automate the provided test scenarios using Actions and JavaScript instead of regular Selenium
 interactions
 
-WebSite: https://phptravels.net
+WebSite: https://www.booking.com
 
-### Scenario 1: Carousel Navigation
+### Scenario 2: Navigate to Register Page Using Keyboard
 
-| Step                                                                    | Expected Result                                         |
-|-------------------------------------------------------------------------|---------------------------------------------------------|
-| 1. Launch https://phptravels.net                                        | PHP Travels homepage should display.                    |
-| 2. Use `Tab` key to change focus to 'Hotels' menu item.                 | 'Hotels' menu item is highlighted.                      |
-| 3. Use `Enter` key to navigate to 'Hotels' page.                        | 'Hotels' page opens.                                    |
-| 4. Use arrow keys to navigate the Carousel images on the 'Hotels' page. | Carousel images cycle through when Arrow keys are used. |
+| Step                                                        | Expected Result                                                     |
+|-------------------------------------------------------------|---------------------------------------------------------------------|
+| 1. Launch https://www.booking.com                           | Booking.com homepage should display.                                |
+| 2. Use `Tab` key repeatedly to shift focus to `Register`.   | "Register" is highlighted.                                          |
+| 3. Press `Enter` key to navigate to the registration page.  | User is redirected to the registration page.                        |
 
-### Scenario 2: Open Account Drop Down and Select Login
+### Scenario 2: Change Currency with Keyboard Navigation
 
-| Step                                                                             | Expected Result                                |
-|----------------------------------------------------------------------------------|------------------------------------------------|
-| 1. Launch https://phptravels.net                                                 | PHP Travels homepage should display            |
-| 2. Use `Tab` key repeatedly to shift focus onto the 'My Account' drop down menu. | 'My Account' dropdown menu is highlighted.     |
-| 3. Press `Enter` key to see the 'My Account' dropdown options.                   | Dropdown options - 'Sign up', 'Login' display. |
-| 4. With dropdown opened, use `Tab` to highlight 'Login' and press `Enter`.       | User is redirected to the Login page.          |
+| Step                                                           | Expected Result                                    |
+|----------------------------------------------------------------|----------------------------------------------------|
+| 1. Launch https://www.booking.com                              | Booking.com homepage should display                |
+| 2. Use `Tab` key to navigate to the Currency dropdown menu.    | The Currency dropdown is highlighted               |
+| 3. Press `Enter` key to see the Currency dropdown options.     | Dropdown options for different currencies display. |
+| 4. Use the Arrow Keys to navigate to the last currency choice. | Individual currency choice gets highlighted.       |
+| 5. Press `Enter` key to select a highlighted currency.         | The page updates to the selected currency.         |
 
-### Scenario 3: Change Currency with Keyboard Navigation
+### Scenario 3: Search for Stays in a Specific Location
 
-| Step                                                                    | Expected Result                                    |
-|-------------------------------------------------------------------------|----------------------------------------------------|
-| 1. Launch https://phptravels.net                                        | PHP Travels homepage should display                |
-| 2. Use `Tab` key to navigate to the Currency dropdown menu.             | The Currency dropdown is highlighted               |
-| 3. Press `Enter` key to see the Currency dropdown options.              | Dropdown options for different currencies display. |
-| 4. Use the Arrow Keys to navigate through the currency choices.         | Individual currency choices get highlighted.       |
-| 5. Press `Enter` key to select a highlighted currency.                  | The page updates to the selected currency.         |
+| Step                                                                                                      | Expected Result                                         |
+|-----------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
+| 1. Launch https://www.booking.com                                                                         | Booking.com homepage should display.                    |
+| 2. Use `Tab` key repeatedly to shift focus onto the 'Stays' search bar.                                   | 'Stays' search bar is highlighted.                      |
+| 3. Type in a location (e.g., 'New York') and use `Tab` key to navigate to the next field (Check-in date). | Location is set to 'New York'.                          |
+| 4. Use `Arrow` keys to select a Check-in date and `Tab` key to navigate to Check-out date field.          | Check-In date is selected.                              |
+| 5. Use `Arrow` keys to select a Check-out date and `Tab` key to navigate to 'Guests' field.               | Check-Out date is selected.                             |
+| 6. Use `Arrow` keys to select number of guests and `Tab` key to navigate to 'Search' button.              | Number of guests is selected.                           |
+| 7. Press `Enter` key to initiate the search.                                                              | Search results for 'Stays' in 'New York' are displayed. |
 
-### Scenario 4: Navigating Backwards Through Hotels List Using Keyboard Shortcuts
+### Scenario 4: Selecting a City from AutoComplete
 
-| Step                                                                   | Expected Result                                                         |
-|------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| 1. Launch https://phptravels.net                                       | PHP Travels homepage should display                                     |
-| 2. Use `Tab` key to navigate to "Hotels" menu and `Enter` to select it | "Hotels" page opens                                                     |
-| 3. Use `Tab` key several times to move focus on the third hotel        | Each hotel entry gets highlighted as keyboard focus changes forward     |
-| 4. Hold `Shift` key and press `Tab` to move focus to the first hotel   | Each hotel entry gets highlighted as keyboard focus changes backward    |
-| 5. Press `Enter` key at highlighted hotel                              | The detailed page of the selected hotel should open                     |
+| Step                                                                                                                                         | Expected Result                                   |
+|----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
+| 1. Launch https://www.booking.com                                                                                                            | Booking.com homepage should display               |
+| 2. Use `Tab` key to navigate to the search field.                                                                                            | The search field is focused.                      |
+| 3. Type 'New Yo' and wait for the auto-complete suggestions.                                                                                 | Suggestions should display.                       |
+| 4. Use `Down Arrow` key to navigate through auto-complete suggestions and `Enter` to select 'New York All Airports' from the autocomplete.   | 'New York NYC' is selected in the dropdown field. |
 
-### Scenario 5: Selecting a City from AutoComplete
+### Scenario 5: Skip to Main Content
 
-| Step                                                                                                                                       | Expected Result                                   |
-|--------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| 1. Launch https://phptravels.net                                                                                                           | PHP Travels homepage should display               |
-| 2. Use `Tab` key to navigate to the search field.                                                                                          | The search field is focused.                      |
-| 3. Type 'New Yo' and wait for the auto-complete suggestions.                                                                               | Suggestions should display.                       |
-| 4. Use `Down Arrow` key to navigate through auto-complete suggestions and `Enter` to select 'New York All Airports' from the autocomplete. | 'New York NYC' is selected in the dropdown field. |
-
+| Step                                                    | Expected Result                          |
+|---------------------------------------------------------|------------------------------------------|
+| 1. Launch https://www.booking.com                       | Booking.com homepage should display      |
+| 2. Click `Tab` key.                                     | Skip to main content button is displayed |
+| 3. Click 'Skip to main content' button using JavaScript | Booking menu is not displayed            |
+| 4. Click `Shift + Tab` keys                             | Booking menu is displayed                |
 
 ## After all check list
 
