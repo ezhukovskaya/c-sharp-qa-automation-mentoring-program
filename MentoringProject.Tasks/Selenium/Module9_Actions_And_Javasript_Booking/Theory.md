@@ -1,6 +1,6 @@
 # Additional Interactions With Web Elements
 
-In this section, we'll explore additional interactions with web elements using Selenium and JavaScript. We'll cover 
+In this section, we'll explore additional interactions with web elements using Selenium and JavaScript. We'll cover
 popular interactions and provide examples for each. Sometimes regular clicks, send keys and etc. are not working with
 web elements. So, that means we need to use additional interactions.
 
@@ -11,6 +11,7 @@ Selenium's `Actions` class provides a way to perform complex interactions by cha
 ### Click and Hold
 
 Perform a click-and-hold action on an element, useful for drag-and-drop scenarios.
+
 ```csharp
 Actions actions = new Actions(driver);
 IWebElement sourceElement = driver.FindElement(By.Id("source"));
@@ -147,10 +148,10 @@ document.getElementById('myButton').click(); // Click the element
 
 - [Selenium Actions Class](https://toolsqa.com/selenium-webdriver/actions-class-in-selenium/)
 
-It's important to choose the appropriate method based on the complexity of the interaction and the behavior you want 
+It's important to choose the appropriate method based on the complexity of the interaction and the behavior you want
 to simulate. While Actions provide a higher-level API for interacting with web elements, JavaScript interactions offer more flexibility for custom interactions and validations.
 
 Remember to ensure that you have appropriate waits and synchronization mechanisms in place to handle dynamic elements.
 
-By leveraging these interactions, you can enhance your Selenium test automation and perform advanced actions on web 
+By leveraging these interactions, you can enhance your Selenium test automation and perform advanced actions on web
 elements.

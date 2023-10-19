@@ -1,8 +1,8 @@
-﻿# Waiters
+﻿# Waits
 
 ## Description
 
-Practicing using Explicit/Implicit/Fluent waits
+Practicing using Explicit/Implicit/Fluent waits.
 
 ## Materials
 
@@ -17,15 +17,15 @@ Practicing using Explicit/Implicit/Fluent waits
 
 ## Home Task
 
-Your task is to test various functionalities of the website "https://booking.com" using C# Selenium with NUnit. Your goal is to create automated test scenarios to ensure different features of the website are working as expected. You should avoid using Thread.Sleep for waits and instead, use explicit waits such as WebDriverWait, to ensure reliable and stable test execution.
+Your task is to test various functionalities of the website "<https://booking.com>" using C# Selenium with NUnit. Your goal is to create automated test scenarios to ensure different features of the website are working as expected. You should avoid using Thread.Sleep for waits and instead, use explicit waits such as WebDriverWait, to ensure reliable and stable test execution.
 
-Test website: https://booking.com
+Test website: <https://booking.com>
 
 ### Scenario 1: Search Hotels
 
 | Step                                                                                          | Expected Result                                |
 |-----------------------------------------------------------------------------------------------|------------------------------------------------|
-| Navigate to https://booking.com                                                               | The Booking.com homepage should be displayed   |
+| Navigate to <https://booking.com>                                                               | The Booking.com homepage should be displayed   |
 | Enter a destination in the search box                                                         | The selected destination should be filled in   |
 | Choose Check-in and Check-out dates from the date picker                                      | The selected dates should be displayed         |
 | Click on the "Search" button                                                                  | A list of hotels should be displayed           |
@@ -34,7 +34,7 @@ Test website: https://booking.com
 
 | Step                                                                                                                            | Expected Result                                                                         |
 |---------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| Navigate to https://booking.com                                                                                                 | The Booking.com homepage is displayed                                                   |
+| Navigate to <https://booking.com>                                                                                                 | The Booking.com homepage is displayed                                                   |
 | Click on the "Attractions" menu item                                                                                            | The "Attractions" search page is displayed                                              |
 | Enter a specific city in the search box                                                                                         | The selected city should be auto-filled in the search box                               |
 | Select the desired dates for visiting the attraction                                                                            | The selected dates should be filled in                                                  |
@@ -46,7 +46,7 @@ Test website: https://booking.com
 
 | Step                                                                                                       | Expected Result                                                   |
 |------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| Navigate to https://booking.com                                                                            | The Booking.com homepage is displayed                             |
+| Navigate to <https://booking.com>                                                                            | The Booking.com homepage is displayed                             |
 | Click on the "Car rentals" menu item                                                                       | The "Car rentals" page is displayed                               |
 | Leave the 'Pick-up Location' field empty and click the "Search" button                                     | An error message is shown, advising to enter the pick-up location |
 | Input invalid data (non-existent location) into the 'Pick-up Location' field and click the "Search" button | An error message is shown, advising to enter the pick-up location |
@@ -56,7 +56,7 @@ Test website: https://booking.com
 
 | Step                                                                        | Expected Result                                                              |
 |-----------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| Navigate to https://booking.com                                             | The Booking.com homepage is displayed                                        |
+| Navigate to <https://booking.com>                                             | The Booking.com homepage is displayed                                        |
 | Click on the "Flights" menu item                                            | The "Flights" page is displayed                                              |
 | Select "Multi-city" mode                                                    | The search forms for multiple destinations appear (must be 3 legs)           |
 | Enter the departure and arrival destinations for all legs of the journey    | The selected destinations are filled in                                      |
@@ -71,7 +71,7 @@ Test website: https://booking.com
 
 | Step                                                            | Expected Result                                                                            |
 |-----------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| Navigate to https://booking.com                                 | The Booking.com homepage is displayed                                                      |
+| Navigate to <https://booking.com>                                 | The Booking.com homepage is displayed                                                      |
 | Enter a specific city in the search box                         | The selected city is auto-filled in search box                                             |
 | Click on the "Check-in" and "Check-out" date field              | The calendar for date selection should appear                                              |
 | Select the check-in and check-out dates                         | The selected dates should be filled in                                                     |
@@ -85,7 +85,7 @@ Test website: https://booking.com
 
 | Step                                                                                                                                   | Expected Result                                                                                          |
 |----------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Navigate to https://booking.com                                                                                                        | The Booking.com homepage is displayed                                                                    |
+| Navigate to <https://booking.com>                                                                                                        | The Booking.com homepage is displayed                                                                    |
 | Enter a city in the search box                                                                                                         | The entered city is auto-filled in search box                                                            |
 | Click on the "Check-in" and "Check-out" date field                                                                                     | The calendar for date selection should appear                                                            |
 | Select the check-in and check-out dates                                                                                                | The selected dates should be filled in                                                                   |
@@ -102,14 +102,14 @@ Test website: https://booking.com
 
 | Step                                                                                                     | Expected Result                                  |
 |----------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| Navigate to https://booking.com                                                                          | The Booking.com homepage should be displayed     |
+| Navigate to <https://booking.com>                                                                          | The Booking.com homepage should be displayed     |
 | Choose a different language from the dropdown menu                                                       | The site should reload in the selected language  |
 
 ### Scenario 8: Booking an Airport Taxi
 
 | Step                                                                       | Expected Result                                                                              |
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| Navigate to https://booking.com                                            | The Booking.com homepage is displayed                                                        |
+| Navigate to <https://booking.com>                                            | The Booking.com homepage is displayed                                                        |
 | Click on the "Airport taxis" menu item                                     | The "Book your airport taxi" page is displayed                                               |
 | Enter a valid Pick-up location and destination                             | Pick-up and Destination are selected                                                         |
 | Enter a valid flight arrival date and time                                 | Date and time are selected                                                                   |
@@ -120,10 +120,9 @@ Test website: https://booking.com
 
 | Step                                                                     | Expected Result                                                                                  |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| Navigate to https://booking.com                                          | The Booking.com homepage should be displayed                                                     |
+| Navigate to <https://booking.com>                                          | The Booking.com homepage should be displayed                                                     |
 | Click on the `Sign in` button                                            | The login page should be displayed                                                               |
 | Enter invalid or unregistered email addresses in the 'Email' field       | Create password page is displayed. Verify 'Password' and 'Confirm Password' fields are displayed |
-
 
 ## Evaluation Criteria
 
@@ -133,4 +132,4 @@ Your homework will be evaluated based on the following criteria:
 - Proper organization and structure of the test code.
 - Appropriate use of assertions to verify the expected outcomes.
 
-#### Good luck with your homework! If you have any questions, feel free to reach out for clarification. Happy coding!
+#### Good luck with your homework! If you have any questions, feel free to reach out for clarification. Happy coding
