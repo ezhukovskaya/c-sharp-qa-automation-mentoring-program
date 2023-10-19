@@ -11,7 +11,7 @@ Welcome to the comprehensive C# Selenium Course. This course has been designed t
 5. [**Browser Actions:**](./Module5_BrowserActions_The_Internet) Master various browser actions that can be automated using Selenium.
 6. [**Different Page Elements:**](./Module6_Different_Page_Elements_The_Internet) Understand different page elements and how to interact with them using Selenium.
 7. [**Page Object Model:**](./Module7_POM_The_Internet) Learn about the Page Object Model and its uses in creating organized test structures.
-8. [**Waits:**](./Module8_Waiters_Booking) Deep-dive into concept of waits in Selenium and how to implement them.
+8. [**Waits:**](./Module8_Waits_Booking) Deep-dive into concept of waits in Selenium and how to implement them.
 9. [**Selenium Action and Javascript:**](./Module9_Actions_And_Javasript_Booking) Explore how to perform actions in Selenium and using Javascript in automation tests.
 10. [**Wrappers:**](./Module10_Wrappers_Booking) Explore how to create wrappers for different web elements
 
