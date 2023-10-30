@@ -50,7 +50,6 @@ Test website: <https://booking.com>
 | Click on the "Car rentals" menu item                                                                       | The "Car rentals" page is displayed                               |
 | Leave the 'Pick-up Location' field empty and click the "Search" button                                     | An error message is shown, advising to enter the pick-up location |
 | Input invalid data (non-existent location) into the 'Pick-up Location' field and click the "Search" button | An error message is shown, advising to enter the pick-up location |
-| Select a valid pick-up date but select a return date earlier than the pick-up date                         | Pick-up date = Drop-off date - 1 day                              |
 
 ### Scenario 4: Multi-City Flight Search
 
