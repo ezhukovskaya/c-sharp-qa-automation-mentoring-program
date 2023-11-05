@@ -15,7 +15,7 @@ interactions
 
 WebSite: <https://www.booking.com>
 
-### Scenario 2: Navigate to Register Page Using Keyboard
+### Scenario 1: Navigate to Register Page Using Keyboard
 
 | Step                                                        | Expected Result                                                     |
 |-------------------------------------------------------------|---------------------------------------------------------------------|
