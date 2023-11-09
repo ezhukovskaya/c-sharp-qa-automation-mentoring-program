@@ -16,7 +16,7 @@ Practicing using `IWebElement` Wrappers
 ## Home Task
 
 1. Create `IWebElement` wrappers for the following web elements: Button, TextBox, DropDown
-2. Refactor all your Page objects via using new wrappers for PHP Travels project
+2. Refactor all your Page objects via using new wrappers for Booking project
 
 ## After all check list
 
@@ -25,4 +25,4 @@ Practicing using `IWebElement` Wrappers
 3. Add screenshots to PR description
 4. Notify your mentor about completing the task
 
-#### Good luck with your homework! If you have any questions, feel free to reach out for clarification. Happy coding!
+#### Good luck with your homework! If you have any questions, feel free to reach out for clarification. Happy coding
